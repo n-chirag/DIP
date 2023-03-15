@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height:100vh;
+}
+
+header {
+    background-color: #80e6f6;
+    color: #ac75c2;
+    padding: 1rem;
+
+}
+
+.flex-container {
+    display: flex;
+    flex-grow: 1;
+}
+
+aside {
+    background-color:beige;
+    width: 300px;
+    padding: ;
+}
+
+main {
+    flex-grow: 1;
+    padding: 1rem;
+}
+
+footer {
+    background-color: coral;
+    color:black;
+    padding: 1rem;
+}
