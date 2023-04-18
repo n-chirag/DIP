@@ -17,20 +17,52 @@
     <body>
         <header>
             <div id="heading">
-                <h1>Digital Image Processing</h1>
+
+                <center>
+                    <a href="https://n-chirag.github.io/DIP/" >
+                        <img src="./images\PixelPit logo.png" alt="logos" id="image">
+                    </a>
+                </center>
             </div>
 
         </header>
 
+        <button onclick="topFunction()" id="myBtn" title="Go to top"> Go to Top ↑</button>
+
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+
         
-        <div id="theme-selector"><b>Theme:</b>
-            <input type="radio" class="theme-switch" name="theme-switch" id="theme-switch1">
-            <label for="theme-switch1" class="switch-label">Light</label>
-            <input type="radio" class="theme-switch" name="theme-switch" id="theme-switch2">
-            <label for="theme-switch2" class="switch-label">Dark</label>
-            <input type="radio" class="theme-switch" name="theme-switch" id="theme-switch3">
-            <label for="theme-switch3" class="switch-label">Tomato</label>
-        </div>
+
+        <div class="theme">
+            <div id="theme-selector"><b>Theme:</b>
+                <input type="radio" class="theme-switch" name="theme-switch" id="theme-switch1">
+                <label for="theme-switch1" class="switch-label">Light</label>
+                <input type="radio" class="theme-switch" name="theme-switch" id="theme-switch2">
+                <label for="theme-switch2" class="switch-label">Dark</label>
+                <input type="radio" class="theme-switch" name="theme-switch" id="theme-switch2">
+                <label for="theme-switch3" class="switch-label">Colourful</label>
+            </div>
+         </div>
 
         <div class="flex-container">
             <aside>
@@ -44,7 +76,7 @@
             </aside>
 
 
-            
+
             <main>
                 <h2> Hello! Enter main content here!</h2>
 
