@@ -3,6 +3,10 @@
 
     <head>
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">   
         <meta charset="utf-8">
         <title>DIP</title>
         <link rel="shortcut icon" type="image/x-icon" href="./images/staticfavicon.ico">
@@ -12,17 +16,21 @@
 
     <body>
         <header>
-            <i src="./images/staticfavicon.ico"></i>
-            <h1>Digital Image Processing</h1>
-            <div id="theme-selector"><b>Theme:</b>
-                <input type="radio" class="theme-switch" name="theme-switch" id="theme-switch1">
-                <label for="theme-switch1" class="switch-label">Light</label>
-                <input type="radio" class="theme-switch" name="theme-switch" id="theme-switch2">
-                <label for="theme-switch2" class="switch-label">Dark</label>
-                <input type="radio" class="theme-switch" name="theme-switch" id="theme-switch3">
-                <label for="theme-switch3" class="switch-label">Tomato</label>
+            <div id="heading">
+                <h1>Digital Image Processing</h1>
             </div>
+
         </header>
+
+        
+        <div id="theme-selector"><b>Theme:</b>
+            <input type="radio" class="theme-switch" name="theme-switch" id="theme-switch1">
+            <label for="theme-switch1" class="switch-label">Light</label>
+            <input type="radio" class="theme-switch" name="theme-switch" id="theme-switch2">
+            <label for="theme-switch2" class="switch-label">Dark</label>
+            <input type="radio" class="theme-switch" name="theme-switch" id="theme-switch3">
+            <label for="theme-switch3" class="switch-label">Tomato</label>
+        </div>
 
         <div class="flex-container">
             <aside>
@@ -34,6 +42,9 @@
                     <li>Topic 3</li>
                 </ul>
             </aside>
+
+
+            
             <main>
                 <h2> Hello! Enter main content here!</h2>
 
@@ -92,8 +103,19 @@
 
             </main>
         </div>
+
         <footer>
-            <p>Footer content goes here!</p>
+        <div class="footer">
+            <ul class="social-network social-circle">
+              <li><a class="icoLinkedin" href="https://www.linkedin.com" title="Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+              <li><a class="icoTwitter" href="https://twitter.com/" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="icoMedium" href="https://medium.com/" title="Medium" target="_blank"><i class="fa fa-medium"></i></a></li>
+              <li><a class="icoQuora" href="https://www.quora.com" title="Quora" target="_blank"><i class="fa fa-quora"></i></a></li>
+              <li><a class="icoFacebook" href="https://www.facebook.com" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="icoInstagram" href="https://www.instagram.com" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+          </div>
+          <div class="footer">&copy;2024  PixelPit . All rights reserved. </div>
         </footer>
 
         
