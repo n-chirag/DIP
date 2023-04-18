@@ -71,15 +71,69 @@ header {
 
 
 aside {
-    background-color:beige;
-    color: rgb(0, 0, 0);
-    border:solid;
-    border-color: rgb(0, 0, 0);
-    border-width: 2px;
-    border-radius: 10px;
-    margin: 3px;
-    width: 300px;
-    padding:1rem ;
+  color: #fff;
+  height: auto;
+  width: 250px;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-left: 20px;
+  height: 100vh;
+  background-color:#162341;
+  font-family: 'Delius Swash Caps', cursive;
+}
+
+aside a {
+  font-size: 20px;
+  color: #fff;
+  display: block;
+  padding: 12px;
+  padding-left: 10px;
+  text-decoration: none;
+  -webkit-tap-highlight-color:transparent;
+}
+
+aside a:hover {
+  color: #3f5efb;
+  background: #fff;
+  outline: none;
+  position: relative;
+  background-color: #fff;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+aside a i {
+  margin-right: 5px;
+}
+
+aside a:hover::after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  bottom: 100%;
+  right: 0;
+  height: 35px;
+  width: 35px;
+  border-bottom-right-radius: 6px;
+  box-shadow: 0 20px 0 0 #fff;
+}
+
+aside a:hover::before {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  top: 38px;
+  right: 0;
+  height: 35px;
+  width: 35px;
+  border-top-right-radius: 18px;
+  box-shadow: 0 -20px 0 0 #fff;
+}
+
+aside p {
+  margin: 0;
+  padding: 40px 0;
 }
 
 /*------------------------------------------------------------------------------*/
@@ -91,6 +145,7 @@ main {
     border-width: 2px;
     border-radius: 10px;
     margin: 3px;
+    margin-left: ;
     padding: 1rem;
     background-color:burlywood;
 }
