@@ -69,6 +69,7 @@ header {
     flex-grow: 1;
 }
 
+/*------------------------------------------------------------------------------*/
 
 aside {
   color: #fff;
@@ -79,7 +80,7 @@ aside {
   overflow-x: hidden;
   padding-left: 20px;
   height: 100vh;
-  background-color:#162341;
+  background-color:#5672b4;
   font-family: 'Delius Swash Caps', cursive;
 }
 
@@ -140,18 +141,28 @@ aside p {
 
 main {
     flex-grow: 1;
-    border:solid;
-    border-color: rgb(0, 0, 0);
-    border-width: 2px;
-    border-radius: 10px;
-    margin: 3px;
-    margin-left: ;
     padding: 1rem;
-    background-color:burlywood;
+    background-color:transparent;
 }
 
+/*------------------------------------------------------------------------------*/
+
+h2{
+  font-family: 'Grand Hotel',cursive;
+  font-size: 3rem;
+}
+
+p{
+  font-family: 'Patrick Hand', cursive;
+  font-size: 20px ;
+
+}
+
+/*------------------------------------------------------------------------------*/
+
+
 iframe {
-    background-color:rgb(90, 194, 194);
+    background-color:rgb(159, 223, 223);
     border:solid;
     border-color: rgb(0, 0, 0);
     border-width: 2px;
