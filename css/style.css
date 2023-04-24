@@ -74,6 +74,7 @@ header {
 
 aside {
   color: #fff;
+  position:sticky;
   height: auto;
   width: 250px;
   top: 0;
@@ -193,6 +194,7 @@ p{
 
 .content {
   padding: 0 18px;
+  display: block;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -206,14 +208,14 @@ iframe {
     border:solid;
     width: 100%;
     overflow-clip-margin: content-box;
-    border-style: inset;
+    border-style: solid;
     border-color: rgb(0, 0, 0);
     border-width: 2px;
     border-radius: 10px;
     margin: 3px;
     overflow: clip !important;
     padding: 1rem;
-    box-sizing: ;
+    box-sizing: border-box ;
     word-wrap: break-word;
 }
 
