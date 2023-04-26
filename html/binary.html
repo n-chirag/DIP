@@ -20,7 +20,7 @@
 
     <body>
 
-        <h2> Color Coversion: Black and white!</h2>
+        <h2>Binary</h2>
 
        
         <p id="status">OpenCV is loading...</p>
@@ -58,10 +58,12 @@
             {
                 let src = cv.imread(imgElement);
                 let dst = new cv.Mat();
+                let low = new cv.Mat(src.rows, src.cols, src.type(), [0, 0, 0, 0]);
+                let high = new cv.Mat(src.rows, src.cols, src.type(), [150, 150, 150, 255]);
                 // You can try more different parameters
-                cv.cvtColor(src, dst, cv.COLOR_BGR2GRAY, 0);
+                cv.inRange(src, low, high, dst);
                 cv.imshow('canvasOutput', dst);
-                src.delete(); dst.delete();
+                src.delete(); dst.delete(); low.delete(); high.delete();
             };
 
 

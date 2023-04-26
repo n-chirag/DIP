@@ -20,7 +20,7 @@
 
     <body>
 
-        <h2> Color Coversion: Black and white!</h2>
+        <h2>Rotate</h2>
 
        
         <p id="status">OpenCV is loading...</p>
@@ -58,10 +58,13 @@
             {
                 let src = cv.imread(imgElement);
                 let dst = new cv.Mat();
+                let dsize = new cv.Size(src.rows, src.cols);
+                let center = new cv.Point(src.cols / 2, src.rows / 2);
                 // You can try more different parameters
-                cv.cvtColor(src, dst, cv.COLOR_BGR2GRAY, 0);
+                let M = cv.getRotationMatrix2D(center, 45, 1);
+                cv.warpAffine(src, dst, M, dsize, cv.INTER_LINEAR, cv.BORDER_CONSTANT, new cv.Scalar());
                 cv.imshow('canvasOutput', dst);
-                src.delete(); dst.delete();
+                src.delete(); dst.delete(); M.delete();
             };
 
 

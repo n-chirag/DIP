@@ -20,7 +20,7 @@
 
     <body>
 
-        <h2> Color Coversion: Black and white!</h2>
+        <h2> Binary Thresholding</h2>
 
        
         <p id="status">OpenCV is loading...</p>
@@ -58,10 +58,12 @@
             {
                 let src = cv.imread(imgElement);
                 let dst = new cv.Mat();
+                cv.cvtColor(src, src, cv.COLOR_RGBA2GRAY, 0);
                 // You can try more different parameters
-                cv.cvtColor(src, dst, cv.COLOR_BGR2GRAY, 0);
+                cv.adaptiveThreshold(src, dst, 200, cv.ADAPTIVE_THRESH_GAUSSIAN_C, cv.THRESH_BINARY, 3, 2);
                 cv.imshow('canvasOutput', dst);
-                src.delete(); dst.delete();
+                src.delete();
+                dst.delete();
             };
 
 
