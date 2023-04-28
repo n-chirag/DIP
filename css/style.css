@@ -42,7 +42,8 @@ header {
 /*------------------------------------------------------------------------------*/
 
 #myBtn {
-  font-family: 'Grand Hotel', cursive;
+  font-family: 'Pompiere', cursive;
+  font-weight: bold;
   display: none;
   position: fixed;
   bottom: 20px;
@@ -121,7 +122,7 @@ aside a:hover::after, .dropdown-btn:hover::after {
   bottom: 100%;
   right: 0;
   height: 35px;
-  width: 35px;
+  width: 50px;
   border-bottom-right-radius: 6px;
   box-shadow: 0 20px 0 0 #fff;
 }
@@ -133,7 +134,7 @@ aside a:hover::before, .dropdown-btn:hover::before {
   top: 38px;
   right: 0;
   height: 35px;
-  width: 35px;
+  width: 50px;
   border-top-right-radius: 18px;
   box-shadow: 0 -20px 0 0 #fff;
 }
