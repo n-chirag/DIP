@@ -2,14 +2,20 @@ html{
     display: block;
 }
 
+/*------------------------------------------------------------------------------*/
+
 body,div,p{
     font: 400 14px/22px; 
     font-family:'Quicksand',sans-serif;
 }
 
+/*------------------------------------------------------------------------------*/
+
 body{
     text-align: center;
 }
+
+/*------------------------------------------------------------------------------*/
 
 
 h2{
@@ -22,9 +28,13 @@ h2{
     font-weight: bold;
 }
 
+/*------------------------------------------------------------------------------*/
+
 div{
     display:block;
 }
+
+/*------------------------------------------------------------------------------*/
 
 table{
     display: table;
@@ -41,11 +51,14 @@ table{
     margin-right: auto;
 }
 
+
 tbody{
     display:table-row-group;
     vertical-align: middle;
     border-color: inherit;
 }
+
+
 
 td{
     display: table-cell;
@@ -54,11 +67,15 @@ td{
     padding: 10ox 0px 0px 10px;
 }
 
+
+
 tr {
     display: table-row;
     vertical-align: inherit;
     border-color: inherit;
 }
+
+/*------------------------------------------------------------------------------*/
 
 canvas,img,video{
     border: 1px solid black;
@@ -86,4 +103,38 @@ video{
     max-width: 250px;
     overflow-clip-margin: content-box;
     overflow: clip;
+}
+
+/*------------------------------------------------------------------------------*/
+input[type=range i] {
+    appearance: auto;
+    cursor: default;
+    color: -internal-light-dark(rgb(16, 16, 16), rgb(255, 255, 255));
+    padding: initial;
+    border: initial;
+    margin: 2px;
+}
+
+input{
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
 }
