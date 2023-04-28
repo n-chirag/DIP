@@ -12,7 +12,7 @@
 
     <body>
 
-        <h2> Hello! Image upload Test</h2>
+        <h2>Rotate</h2>
 
        
         <p id="status">OpenCV is loading...</p>
@@ -48,13 +48,21 @@
             
             imgElement.onload = function()
             {
-                let mat = cv.imread(imgElement);
-                cv.imshow('canvasOutput', mat);
-                mat.delete();
+                let src = cv.imread(imgElement);
+                let dst = new cv.Mat();
+                let dsize = new cv.Size(src.rows, src.cols);
+                let center = new cv.Point(src.cols / 2, src.rows / 2);
+                // You can try more different parameters
+                let M = cv.getRotationMatrix2D(center, 45, 1);
+                cv.warpAffine(src, dst, M, dsize, cv.INTER_LINEAR, cv.BORDER_CONSTANT, new cv.Scalar());
+                cv.imshow('canvasOutput', dst);
+                src.delete(); dst.delete(); M.delete();
             };
 
+
+/*CHECKS WHETHER OPENCV HAS BEEN LOADED DONT DELETE THIS LIKE AN IDIOT!*/
             var Module = { onRuntimeInitialized() {
-                 document.getElementById('status').innerHTML = 'OpenCV.js is ready. Image can be uploaded!';
+                 document.getElementById('status').innerHTML = 'Upload an image to test!';
                 }
             };
         </script>
