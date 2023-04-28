@@ -32,7 +32,7 @@ header {
 /*------------------------------------------------------------------------------*/
 
 .theme {
-  font-family: 'Grand Hotel', cursive;
+  font-family: 'Pompiere', cursive;
   font-size: 2rem;
   text-align: center;
   background-color:#ae6b6b;
@@ -72,7 +72,11 @@ header {
 
 /*------------------------------------------------------------------------------*/
 
-aside {
+#menu {
+  font-family: 'Oldenburg', cursive;
+  font-size: 30px;
+}
+aside{
   color: #fff;
   position:sticky;
   height: auto;
@@ -83,10 +87,10 @@ aside {
   padding-left: 20px;
   height: 100vh;
   background-color:#0e1831;
-  font-family: 'Twinkle Star', cursive;
+  font-family: 'Wellfleet', cursive;
 }
 
-aside a {
+aside a, .dropdown-btn {
   font-size: 20px;
   color: #fff;
   display: block;
@@ -96,8 +100,8 @@ aside a {
   -webkit-tap-highlight-color:transparent;
 }
 
-aside a:hover {
-  color: #3f5efb;
+aside a:hover, .dropdown-btn:hover {
+  color: #182fa3;
   background: #fff;
   outline: none;
   position: relative;
@@ -110,7 +114,7 @@ aside a i {
   margin-right: 5px;
 }
 
-aside a:hover::after {
+aside a:hover::after, .dropdown-btn:hover::after {
   content: "";
   position: absolute;
   background-color: transparent;
@@ -122,7 +126,7 @@ aside a:hover::after {
   box-shadow: 0 20px 0 0 #fff;
 }
 
-aside a:hover::before {
+aside a:hover::before, .dropdown-btn:hover::before {
   content: "";
   position: absolute;
   background-color: transparent;
@@ -139,6 +143,11 @@ aside p {
   padding: 40px 0;
 }
 
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
 /*------------------------------------------------------------------------------*/
 
 main {
@@ -150,7 +159,7 @@ main {
 /*------------------------------------------------------------------------------*/
 
 h2{
-  font-family: 'Grand Hotel',cursive;
+  font-family: 'Londrina Shadow', cursive;
   font-size: 3rem;
 }
 
