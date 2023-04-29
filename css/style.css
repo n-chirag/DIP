@@ -35,7 +35,15 @@ html{
 /*------------------------------------------------------------------------------*/
 
 body {
-    background-color:rgb(255, 255, 255);
+    /* background-color:rgb(255, 255, 255); */
+    /* background-color: #FAACA8;
+background-image: linear-gradient(270deg, #FAACA8 0%, #DDD6F3 100%); */
+/* background-color:#e8c0a7; */
+/* background-color:#ebc6ae; */
+/* background-color:#fad6be; */
+background-color:#ffefe5;
+
+
     display: flex;
     flex-direction: column;
     min-height:100vh;
