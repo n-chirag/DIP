@@ -3,6 +3,18 @@
 html{
   scroll-behavior: smooth;
 }
+
+:root{
+  /* Light mode */
+  --light-text: #222430;
+  --light-bg: #f7f7f7;
+  --light-theme: #d34a97;
+
+  /* Dark mode */
+  --dark-text: #f7f7f7;
+  --dark-bg: #222430;
+  --dark-theme: #bd93f9;
+}
 /*------------------------------------------------------------------------------*/
 
 ::-webkit-scrollbar {
@@ -16,8 +28,8 @@ html{
 
 ::-webkit-scrollbar-thumb {
   box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
-  border-radius: 5px ;
-  background-color: #161974;
+  border-radius: px ;
+  background-color: #c05c4f;
 }
 
 /*------------------------------------------------------------------------------*/
@@ -236,6 +248,10 @@ p{
   background-color: #f1f1f1;
 }
 
+.sample{
+  text-decoration: underline;
+  font-family: 'Oldenburg', cursive;
+}
 /*------------------------------------------------------------------------------*/
 
 iframe {
@@ -263,6 +279,18 @@ section{
   margin: 2px;
   padding: 5px;
   border-bottom: 1px solid black;
+}
+
+img{
+  aspect-ratio: auto ;
+  max-height: 300px;
+  max-width: 300px;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.samp{
+
 }
 
 /*------------------------------------------------------------------------------*/
