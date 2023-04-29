@@ -4,10 +4,38 @@ html{
   scroll-behavior: smooth;
 }
 
+:root{
+  /* Light mode */
+  --light-text: #222430;
+  --light-bg: #f7f7f7;
+  --light-theme: #d34a97;
+
+  /* Dark mode */
+  --dark-text: #f7f7f7;
+  --dark-bg: #222430;
+  --dark-theme: #bd93f9;
+}
+/*------------------------------------------------------------------------------*/
+
+::-webkit-scrollbar {
+  width: initial;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #d3bbc6;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+  border-radius: 5px ;
+  background-color: #b27a46;
+}
+
 /*------------------------------------------------------------------------------*/
 
 body {
-    background-color:rgb(255, 255, 255);
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     min-height:100vh;
@@ -17,7 +45,7 @@ body {
 /*------------------------------------------------------------------------------*/
 
 header {
-    background-color: #132436;
+    background-color: #0a131d;
     color: #aa3434;
     border-width: 2px;
     padding: 10px;
@@ -54,14 +82,14 @@ header {
   border-color:rgb(77, 9, 9) ;
   outline: none;
   background-color: rgb(202, 139, 190);
-  color: rgb(77, 9, 9);
+  color: rgb(41, 5, 5);
   cursor: pointer;
   padding: 15px;
   border-radius: 15px;
 }
 
 #myBtn:hover {
-  background-color: #cdb5b5;
+  background-color: #ebb2b2;
 }
 
 /*------------------------------------------------------------------------------*/
@@ -93,7 +121,7 @@ aside{
   font-family: 'Wellfleet', cursive;
 }
 
-aside a, .dropdown-btn {
+aside a{
   font-size: 20px;
   color: #fff;
   display: block;
@@ -103,9 +131,9 @@ aside a, .dropdown-btn {
   -webkit-tap-highlight-color:transparent;
 }
 
-aside a:hover, .dropdown-btn:hover {
+aside a:hover{
   color: #182fa3;
-  background: #fff;
+  background: transparent;
   outline: none;
   position: relative;
   background-color: #fff;
@@ -117,7 +145,7 @@ aside a i {
   margin-right: 5px;
 }
 
-aside a:hover::after, .dropdown-btn:hover::after {
+aside a:hover::after{
   content: "";
   position: absolute;
   background-color: transparent;
@@ -129,7 +157,7 @@ aside a:hover::after, .dropdown-btn:hover::after {
   box-shadow: 0 20px 0 0 #fff;
 }
 
-aside a:hover::before, .dropdown-btn:hover::before {
+aside a:hover::before{
   content: "";
   position: absolute;
   background-color: transparent;
@@ -144,11 +172,6 @@ aside a:hover::before, .dropdown-btn:hover::before {
 aside p {
   margin: 0;
   padding: 40px 0;
-}
-
-.fa-caret-down {
-  float: right;
-  padding-right: 8px;
 }
 
 /*------------------------------------------------------------------------------*/
@@ -220,6 +243,10 @@ p{
   background-color: #f1f1f1;
 }
 
+.sample{
+  text-decoration: underline;
+  font-family: 'Oldenburg', cursive;
+}
 /*------------------------------------------------------------------------------*/
 
 iframe {
@@ -247,6 +274,18 @@ section{
   margin: 2px;
   padding: 5px;
   border-bottom: 1px solid black;
+}
+
+img{
+  aspect-ratio: auto ;
+  max-height: 300px;
+  max-width: 300px;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.samp{
+
 }
 
 /*------------------------------------------------------------------------------*/

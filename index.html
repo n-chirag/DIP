@@ -52,7 +52,7 @@
 
 <!--------------------------------------------------------------------------------------------------------------------->         
 
-        <div class="theme">
+       <div class="theme">
             <div id="theme-selector"><b>Theme:</b>
                 <input type="radio" class="theme-switch" name="theme-switch" id="theme-switch1">
                 <label for="theme-switch1" class="switch-label">Light</label>
@@ -126,6 +126,11 @@
                 <a href="#segment">
                     <i class="fas fa-angle-right" aria-hidden="true"></i>
                     Segmentation
+                </a>
+
+                <a href="#images">
+                    <i class="fas fa-angle-right" aria-hidden="true"></i>
+                    Sample Images
                 </a>
 <!--
                 <button class="dropdown-btn"><i class="fas fa-angle-right" aria-hidden="true"></i>Topic 
@@ -509,12 +514,58 @@
                 <br><br>
 
                     <div>
-                        <iframe src="./html/segmentation.html" width="100%" style="height: 447px;"></iframe>
+                        <iframe src="./html/segmentation.html" width="100%" style="height: 600px;"></iframe>
                     </div>
 
                 </section>
-                <br>              
+                <br> 
+                
 <!---------------------------------------------------------------------------------------------------------------------> 
+                <section id="images">
+                    <h2>Sample Images for Testing</h2>
+                    <p></p>
+
+                <br>
+                <button class="collapsible">Click to see Images!</button>
+                <div class="content">
+
+                <p class="sample">   
+                Black And White Images
+                </p>
+                <br>
+                <a class="samp" href="./images/bw butterfly.jpg" download="Butterfly">
+                    <img src="./images/bw butterfly.jpg" alt="B&W Butterfly">
+                </a>&nbsp;
+                <a class="samp" href="./images/bw flower.jpeg" download="Flower">
+                    <img src="./images/bw flower.jpeg" alt="B&W Flower">
+                </a>
+
+
+                </p>
+                </div>
+
+                <script type="text/javascript">
+                    var coll = document.getElementsByClassName("collapsible");
+                    var i;
+
+                    for (i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.maxHeight){
+                        content.style.maxHeight = null;
+                        } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                        } 
+                    });
+                    }
+                </script>
+
+                </section>
+                <br>
+                
+<!--------------------------------------------------------------------------------------------------------------------->             
+                </div>
             </main>
         </div>
 <!---------------------------------------------------------------------------------------------------------------------> 
