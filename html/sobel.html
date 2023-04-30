@@ -14,9 +14,9 @@
 
         <h2> Sobel </h2>
 
-       
+        <div id="loading"></div>
         <p id="status">OpenCV is loading...</p>
-        <div>
+        <div id="upload">
             <table cellpadding="0" cellspacing="1" width="1" border="1">
             <tbody><tr>
                 <td>
@@ -69,6 +69,8 @@
 /*CHECKS WHETHER OPENCV HAS BEEN LOADED DONT DELETE THIS LIKE AN IDIOT!*/
             var Module = { onRuntimeInitialized() {
                  document.getElementById('status').innerHTML = 'Upload an image to test!';
+                 document.getElementById('loading').style.display='none';
+                 document.getElementById('upload').style.display='block';
                 }
             };
         </script>

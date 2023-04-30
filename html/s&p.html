@@ -12,7 +12,7 @@
 
     <body>
 
-        <h2> Structuring Element </h2>
+        <h2> Salt and Pepper</h2>
 
         <div id="loading"></div>
         <p id="status">OpenCV is loading...</p>
@@ -49,16 +49,15 @@
             imgElement.onload = function()
             {
                 let src = cv.imread(imgElement);
-                cv.cvtColor(src, src, cv.COLOR_RGBA2RGB);
                 let dst = new cv.Mat();
-                let M = new cv.Mat();
-                let ksize = new cv.Size(5, 5);
-                // You can try more different parameters
-                M = cv.getStructuringElement(cv.MORPH_CROSS, ksize);
-                cv.morphologyEx(src, dst, cv.MORPH_GRADIENT, M);
+                let channels = new cv.MatVector();
+                cv.split(src, channels);
+                for (let i = 0 ; i<channels.size() ; i++) {
+                    cv.randShuffle(channels.get(i), 0.05);
+                }
+                cv.merge(channels,dst);
                 cv.imshow('canvasOutput', dst);
-                src.delete(); dst.delete(); M.delete();
-
+                src.delete(); dst.delete();channels.delete();
             };
 
 

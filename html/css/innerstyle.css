@@ -17,9 +17,30 @@ body{
 
 /*------------------------------------------------------------------------------*/
 
+#loading{
+    position: ;
+    justify-content: center;
+    width: fixed;
+    height: 100;
+    background: white
+    url('./loading.gif')
+    no-repeat center;
+    z-index: 99999;
+}
+
+#loader{
+    border: none;
+    position: fixed;
+    height: 50;
+    width: fixed;
+    background: white
+    no-repeat center;
+    z-index: 99999;
+}
+
 
 h2{
-    display: block;
+    display: none;
     font-size: 1.5em;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
@@ -30,8 +51,8 @@ h2{
 
 /*------------------------------------------------------------------------------*/
 
-div{
-    display:block;
+#upload{
+    display:none;
 }
 
 /*------------------------------------------------------------------------------*/
