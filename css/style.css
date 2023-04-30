@@ -6,15 +6,109 @@ html{
 
 :root{
   /* Light mode */
-  --light-text: #222430;
+  --light-switch-shadow: #373d4e;
+  --light-switch-icon: "🌚";
+  --light-switch-text: "dark mode?";
+  --light-text: #14161f;
   --light-bg: #f7f7f7;
   --light-theme: #d34a97;
+  --light-header-bg:#ffffff;
+  --light-font-main: #000000;
+  --light-main-bg: #ffffff;
 
   /* Dark mode */
+  --dark-switch-shadow: #fce477;
+  --dark-switch-icon: "🌝";
+  --dark-switch-text: "light mode?";
   --dark-text: #f7f7f7;
   --dark-bg: #222430;
   --dark-theme: #bd93f9;
+  --dark-header-bg: #1e2021;
+  --dark-font-main:white;
+  --dark-main-bg: #1e2021;
+  ;
+
+
+  /* Default mode */
+  --switch-shadow-color: var(--light-switch-shadow);
+  --switch-icon: var(--light-switch-icon);
+  --switch-text: var(--light-switch-text);
+  --text-color: var(--light-text);
+  --bg-color: var(--light-bg);
+  --theme-color: var(--light-theme);
+  --header-bg: var(--light-header-bg);
+  --font-main: var(--light-font-main);
+  --main-bg: var(--light-main-bg);
 }
+
+
+
+.theme-switch:checked ~ #page {
+  --switch-shadow-color: var(--dark-switch-shadow);
+  --switch-icon: var(--dark-switch-icon);
+  --switch-text: var(--dark-switch-text);
+  --text-color: var(--dark-text);
+  --bg-color: var(--dark-bg);
+  --theme-color: var(--dark-theme);
+  --header-bg: var(--dark-header-bg); 
+  --font-main: var(--dark-font-main); 
+  --main-bg:var(--dark-main-bg);
+}
+
+.theme {
+  font-family: 'Pompiere', cursive;
+  position: absolute;
+  top: 2rem;
+  font-size: 2rem;
+  text-align: left;
+  background-color: transparent;
+  max-width: 25ch;
+  
+}
+
+/* Theme switcher */
+.theme-switch { /* Hides the checkbox */
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  
+}
+
+.switch-label {
+  cursor: pointer;
+  display: block;
+}
+
+.switch-label::before {
+  content: var(--switch-icon);
+  font-size: 40px;
+  transition: text-shadow .2s;
+}
+
+.switch-label::after {
+  align-self: center;
+  content: var(--switch-text);
+  color: var(--switch-shadow-color);
+  font-size: 28px;
+  line-height: 40px;
+  opacity: 0;
+  padding-left: 15px;
+  transition: opacity .2s;
+}
+
+.theme-switch:focus ~ #page .switch-label::before,
+.switch-label:hover::before {
+  text-shadow: 0 0 15px var(--switch-shadow-color);
+}
+
+.theme-switch:focus ~ #page .switch-label::after,
+.switch-label:hover::after {
+  opacity: 1;
+}
+
+
 /*------------------------------------------------------------------------------*/
 
 ::-webkit-scrollbar {
@@ -45,12 +139,13 @@ body {
 /*------------------------------------------------------------------------------*/
 
 header {
-    background-color: #0a131d; /*variable */
-    color: #aa3434;
+    background-color: var(--header-bg); /*variable */
     border-width: 2px;
     padding: 10px;
     box-sizing: border-box;
+    border-bottom: 10px solid #ae6b6b;
 }
+
 
 #image {
     height: 100px;
@@ -59,13 +154,7 @@ header {
 
 /*------------------------------------------------------------------------------*/
 
-.theme {
-  font-family: 'Pompiere', cursive;
-  font-size: 2rem;
-  text-align: center;
-  background-color:#ae6b6b;
-  
-}
+
 
 /*------------------------------------------------------------------------------*/
 
@@ -186,8 +275,8 @@ aside p {
 main {
     flex-grow: 1;
     padding: 1rem;
-    background-color: #f3dbdb; /*variable */ 
-    color: rgb(0, 0, 0);  /*variable */ 
+    background-color: var(--main-bg); /*variable */ 
+    color: var(--font-main);  /*variable */ 
 }
 
 /*------------------------------------------------------------------------------*/
@@ -196,17 +285,20 @@ h2{
   font-family: 'Londrina Shadow', cursive;
   font-size: 3.5rem;
   text-decoration:  ;
+  color: var(--font-main);
 }
 
 h3{
   font-family: 'Zen Loop', cursive;
   font-size: 2.2rem;
   text-decoration: underline;
+  color: var(--font-main);
 }
 
 p{
   font-family: 'Quicksand', sans-serif;
   font-size: 20px ;
+  color: var(--font-main);
 
 }
 

@@ -14,15 +14,22 @@
     </head>
 <!---------------------------------------------------------------------------------------------------------------------> 
     <body>
+        <input type="checkbox" class="theme-switch" id="theme-switch" />
+        <div id="page">
         <header>
             <div id="heading">
-
-                <center>
+                <center id="logo">
                     <a href="https://n-chirag.github.io/DIP/" >
                         <img src="./images\PixelPit logo.png" alt="logos" id="image">
                     </a>
                 </center>
             </div>
+
+            <div class="theme">
+                <div id="theme-selector">
+                    <label for="theme-switch" class="switch-label"></label>
+                </div>
+             </div>
 
         </header>
 <!---------------------------------------------------------------------------------------------------------------------> 
@@ -52,16 +59,7 @@
 
 <!--------------------------------------------------------------------------------------------------------------------->         
 
-       <div class="theme">
-            <div id="theme-selector"><b>Theme:</b>
-                <input type="radio" class="theme-switch" name="theme-switch" id="theme-switch1">
-                <label for="theme-switch1" class="switch-label">Light</label>
-                <input type="radio" class="theme-switch" name="theme-switch" id="theme-switch2">
-                <label for="theme-switch2" class="switch-label">Dark</label>
-                <input type="radio" class="theme-switch" name="theme-switch" id="theme-switch2">
-                <label for="theme-switch3" class="switch-label">Default</label>
-            </div>
-         </div>
+
 <!---------------------------------------------------------------------------------------------------------------------> 
         <div class="flex-container">
 
@@ -567,7 +565,7 @@
 <!--------------------------------------------------------------------------------------------------------------------->             
                 </div>
             </main>
-        </div>
+        
 <!---------------------------------------------------------------------------------------------------------------------> 
         <footer>
         <div class="footer">
@@ -582,6 +580,24 @@
           </div>
           <div class="footer">&copy;2023  PixelPit . All rights reserved. </div>
         </footer>
+    </div>
+
+    <script>
+        // This code is only used to remember theme selection between page loads
+        const themeSwitch = document.querySelector('.theme-switch');
+        themeSwitch.checked = localStorage.getItem('switchedTheme') === 'true';
+  
+        themeSwitch.addEventListener('change', function(e) {
+          if (e.currentTarget.checked === true) {
+            // Add item to localstorage
+            localStorage.setItem('switchedTheme', 'true');
+          } else {
+            // Remove item if theme is switched back to normal
+            localStorage.removeItem('switchedTheme');
+          }
+        });
+      </script>
+
     </body>
 </html>
 <!---------------------------------------------------------------------------------------------------------------------> 
