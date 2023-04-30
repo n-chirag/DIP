@@ -366,7 +366,19 @@ p{
 .sample{
   text-decoration: underline;
   font-family: 'Oldenburg', cursive;
+  text-align: center;
+  font-style: bold ;
 }
+
+.res{
+  border:solid;
+  border-radius: 2px;
+  border-color: black;
+  margin: 1px;
+  padding: 1px;
+}
+
+
 /*------------------------------------------------------------------------------*/
 
 iframe {
@@ -403,6 +415,7 @@ img{
   overflow-clip-margin: content-box;
   overflow: clip;
 }
+
 
 /*------------------------------------------------------------------------------*/
 
