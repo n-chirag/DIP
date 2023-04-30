@@ -17,9 +17,30 @@ body{
 
 /*------------------------------------------------------------------------------*/
 
+#loading{
+    position: ;
+    justify-content: center;
+    width: fixed;
+    height: 100;
+    background: transparent
+    url('./loading.gif')
+    no-repeat center;
+    z-index: 99999;
+}
+
+#loader{
+    border: none;
+    position: fixed;
+    height: 50;
+    width: fixed;
+    background: transparent
+    no-repeat center;
+    z-index: 99999;
+}
+
 
 h2{
-    display: block;
+    display: none;
     font-size: 1.5em;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
@@ -30,13 +51,14 @@ h2{
 
 /*------------------------------------------------------------------------------*/
 
-div{
-    display:block;
+#upload{
+    display:none;
 }
 
 /*------------------------------------------------------------------------------*/
 
 table{
+    background-color: transparent;
     display: table;
     border-collapse: separate;
     box-sizing: border-box;
@@ -73,6 +95,7 @@ tr {
     display: table-row;
     vertical-align: inherit;
     border-color: inherit;
+    background-color: rgb(255, 255, 255);
 }
 
 /*------------------------------------------------------------------------------*/
@@ -130,11 +153,14 @@ input{
     appearance: auto;
     -webkit-rtl-ordering: logical;
     cursor: text;
-    background-color: field;
-    margin: 0em;
-    padding: 1px 2px;
-    border-width: 2px;
+    background-color: white;
+    margin: ;
+    padding:  ;
+    border-width: ;
     border-style: inset;
-    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-image: initial;
+    border-color: ;
+    border-image: ;
+    font-family: inherit;
+    font-weight: bold;
+    border-radius: 2px;
 }
