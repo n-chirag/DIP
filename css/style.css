@@ -21,6 +21,8 @@ html{
   --light-aside-font: #ffffff ;
   --light-aside-hover-font: #182fa3  ;
   --light-aside-hover-bg: #ffffff ;
+  --light-collapsible:#e84f4f;
+  --light-collapsible-hover:#ed8282;
 
   /* Dark mode */
   --dark-switch-shadow: #fce477;
@@ -38,6 +40,8 @@ html{
   --dark-aside-font: #ffffff ;
   --dark-aside-hover-font: #ffffff  ;
   --dark-aside-hover-bg: var(--dark-main-bg);
+  --dark-collapsible: #3d1d1d;
+  --dark-collapsible-hover:#6b4646;
   ;
 
 
@@ -57,6 +61,8 @@ html{
   --aside-font: var(--light-aside-font);
   --aside-hover-font:var(--light-aside-hover-font);
   --aside-hover-bg: var(--light-aside-hover-bg);
+  --collapsible: var(--light-collapsible);
+  --collapsible-hover: var(--light-collapsible-hover);
 }
 
 
@@ -77,6 +83,8 @@ html{
   --aside-font: var(--dark-aside-font);
   --aside-hover-font:var(--dark-aside-hover-font);
   --aside-hover-bg: var(--dark-aside-hover-bg);
+  --collapsible: var(--dark-collapsible);
+  --collapsible-hover: var(--dark-collapsible-hover);
 }
 
 .theme {
@@ -325,7 +333,7 @@ p{
 /*------------------------------------------------------------------------------*/
 
 .collapsible {
-  background-color: #e84f4f;
+  background-color: var(--collapsible);
   font-family: 'Quicksand', sans-serif;
   color: white;
   cursor: pointer;
@@ -339,7 +347,7 @@ p{
 }
 
 .active, .collapsible:hover {
-  background-color: #ed8282;
+  background-color: var(--collapsible-hover);
 }
 
 .collapsible:after {
@@ -360,7 +368,7 @@ p{
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+  background-color: transparent;
 }
 
 .sample{
