@@ -58,6 +58,7 @@ h2{
 /*------------------------------------------------------------------------------*/
 
 table{
+    background-color: transparent;
     display: table;
     border-collapse: separate;
     box-sizing: border-box;
@@ -94,6 +95,7 @@ tr {
     display: table-row;
     vertical-align: inherit;
     border-color: inherit;
+    background-color: rgb(255, 255, 255);
 }
 
 /*------------------------------------------------------------------------------*/
@@ -151,11 +153,14 @@ input{
     appearance: auto;
     -webkit-rtl-ordering: logical;
     cursor: text;
-    background-color: field;
-    margin: 0em;
-    padding: 1px 2px;
-    border-width: 2px;
+    background-color: white;
+    margin: ;
+    padding:  ;
+    border-width: ;
     border-style: inset;
-    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-image: initial;
+    border-color: ;
+    border-image: ;
+    font-family: inherit;
+    font-weight: bold;
+    border-radius: 2px;
 }
