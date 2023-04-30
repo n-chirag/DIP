@@ -45,7 +45,7 @@ body {
 /*------------------------------------------------------------------------------*/
 
 header {
-    background-color: #0a131d;
+    background-color: #0a131d; /*variable */
     color: #aa3434;
     border-width: 2px;
     padding: 10px;
@@ -79,17 +79,17 @@ header {
   z-index: 99;
   font-size: 25px;
   border: rounded;
-  border-color:rgb(77, 9, 9) ;
+  border-color:rgb(0, 0, 0) ;
   outline: none;
-  background-color: rgb(202, 139, 190);
-  color: rgb(77, 9, 9);
+  background-color: rgb(231, 190, 223);
+  color: rgb(7, 2, 2);
   cursor: pointer;
   padding: 15px;
   border-radius: 15px;
 }
 
 #myBtn:hover {
-  background-color: #cdb5b5;
+  background-color: #afbff3;
 }
 
 /*------------------------------------------------------------------------------*/
@@ -105,10 +105,10 @@ header {
   font-family: 'Oldenburg', cursive;
   font-size: 30px;
   text-align: center;
-  border-bottom: solid 2px white;
+  border-bottom: solid 2px white; /*variable */
 }
 aside{
-  color: #fff;
+  color: #fff; /*variable */
   position:sticky;
   height: auto;
   width: 250px;
@@ -117,13 +117,13 @@ aside{
   overflow-x: hidden;
   padding-left: 15px;
   height: 100vh;
-  background-color:#0e1831;
+  background-color:#0e1831; /*variable */
   font-family: 'Wellfleet', cursive;
 }
 
-aside a, .dropdown-btn {
+aside a{
   font-size: 20px;
-  color: #fff;
+  color: #fff; /*variable */
   display: block;
   padding: 12px;
   padding-left: 10px;
@@ -131,12 +131,12 @@ aside a, .dropdown-btn {
   -webkit-tap-highlight-color:transparent;
 }
 
-aside a:hover, .dropdown-btn:hover {
-  color: #182fa3;
+aside a:hover{
+  color: #182fa3; /*variable */
   background: #fff;
   outline: none;
   position: relative;
-  background-color: #fff;
+  background-color: #ffffff; /*variable */ 
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
 }
@@ -145,7 +145,8 @@ aside a i {
   margin-right: 5px;
 }
 
-aside a:hover::after, .dropdown-btn:hover::after {
+/*aside a:hover::after{
+  display: none;
   content: "";
   position: absolute;
   background-color: transparent;
@@ -157,7 +158,8 @@ aside a:hover::after, .dropdown-btn:hover::after {
   box-shadow: 0 20px 0 0 #fff;
 }
 
-aside a:hover::before, .dropdown-btn:hover::before {
+aside a:hover::before{
+  display: none;
   content: "";
   position: absolute;
   background-color: transparent;
@@ -167,7 +169,7 @@ aside a:hover::before, .dropdown-btn:hover::before {
   width: 25px;
   border-top-right-radius: 18px;
   box-shadow: 0 -20px 0 0 #fff;
-}
+}*/
 
 aside p {
   margin: 0;
@@ -184,7 +186,8 @@ aside p {
 main {
     flex-grow: 1;
     padding: 1rem;
-    background-color:transparent;
+    background-color: #f3dbdb; /*variable */ 
+    color: rgb(0, 0, 0);  /*variable */ 
 }
 
 /*------------------------------------------------------------------------------*/
@@ -289,10 +292,6 @@ img{
   overflow: clip;
 }
 
-.samp{
-
-}
-
 /*------------------------------------------------------------------------------*/
 
 * {
@@ -303,11 +302,12 @@ img{
   /* footer */
 
   .footer {
-    background-color: #6f9ac6;
+    background-color: #6f9ac6; /*variable */
     padding: 20px 0;
     text-align: center;
     font-family: 'Grand Hotel', cursive;
     font-size: larger;
+    color: ; /*variable */
   }
   
   ul.social-network {
