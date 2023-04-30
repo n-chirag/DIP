@@ -22,7 +22,7 @@ body{
     justify-content: center;
     width: fixed;
     height: 100;
-    background: white
+    background: transparent
     url('./loading.gif')
     no-repeat center;
     z-index: 99999;
@@ -33,7 +33,7 @@ body{
     position: fixed;
     height: 50;
     width: fixed;
-    background: white
+    background: transparent
     no-repeat center;
     z-index: 99999;
 }

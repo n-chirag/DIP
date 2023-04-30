@@ -12,9 +12,15 @@ html{
   --light-text: #14161f;
   --light-bg: #f7f7f7;
   --light-theme: #d34a97;
-  --light-header-bg:#ffffff;
+  --light-header-bg:#e4bebe;
   --light-font-main: #000000;
   --light-main-bg: #ffffff;
+  --light-if: #ffffff;
+  --light-footer-bg:#6f9ac6; 
+  --light-aside-bg: #0e1831  ;
+  --light-aside-font: #ffffff ;
+  --light-aside-hover-font: #182fa3  ;
+  --light-aside-hover-bg: #ffffff ;
 
   /* Dark mode */
   --dark-switch-shadow: #fce477;
@@ -23,9 +29,15 @@ html{
   --dark-text: #f7f7f7;
   --dark-bg: #222430;
   --dark-theme: #bd93f9;
-  --dark-header-bg: #1e2021;
+  --dark-header-bg: #111213;
   --dark-font-main:white;
   --dark-main-bg: #1e2021;
+  --dark-if:#989393 ;
+  --dark-footer-bg: #1e262e;
+  --dark-aside-bg: #000000  ;
+  --dark-aside-font: #ffffff ;
+  --dark-aside-hover-font: #ffffff  ;
+  --dark-aside-hover-bg: var(--dark-main-bg);
   ;
 
 
@@ -39,6 +51,12 @@ html{
   --header-bg: var(--light-header-bg);
   --font-main: var(--light-font-main);
   --main-bg: var(--light-main-bg);
+  --if: var(--light-if);
+  --footer-bg: var(--light-footer-bg);
+  --aside-bg: var(--light-aside-bg) ;
+  --aside-font: var(--light-aside-font);
+  --aside-hover-font:var(--light-aside-hover-font);
+  --aside-hover-bg: var(--light-aside-hover-bg);
 }
 
 
@@ -53,6 +71,12 @@ html{
   --header-bg: var(--dark-header-bg); 
   --font-main: var(--dark-font-main); 
   --main-bg:var(--dark-main-bg);
+  --if: var(--dark-if);
+  --footer-bg:var(--dark-footer-bg);
+  --aside-bg: var(--dark-aside-bg) ;
+  --aside-font: var(--dark-aside-font);
+  --aside-hover-font:var(--dark-aside-hover-font);
+  --aside-hover-bg: var(--dark-aside-hover-bg);
 }
 
 .theme {
@@ -194,10 +218,11 @@ header {
   font-family: 'Oldenburg', cursive;
   font-size: 30px;
   text-align: center;
-  border-bottom: solid 2px white; /*variable */
+  border-bottom: solid 2px var(--aside-font);
+  color: var(--aside-font); /*variable */
 }
 aside{
-  color: #fff; /*variable */
+  color: var(--aside-font); /*variable */
   position:sticky;
   height: auto;
   width: 250px;
@@ -206,13 +231,13 @@ aside{
   overflow-x: hidden;
   padding-left: 15px;
   height: 100vh;
-  background-color:#0e1831; /*variable */
+  background-color:var(--aside-bg); /*variable */
   font-family: 'Wellfleet', cursive;
 }
 
 aside a{
   font-size: 20px;
-  color: #fff; /*variable */
+  color: var(--aside-font); /*variable */
   display: block;
   padding: 12px;
   padding-left: 10px;
@@ -221,11 +246,11 @@ aside a{
 }
 
 aside a:hover{
-  color: #182fa3; /*variable */
-  background: #fff;
+  color: var(--aside-hover-font); /*variable */
+  background: var(--aside-hover-bg);
   outline: none;
   position: relative;
-  background-color: #ffffff; /*variable */ 
+  background-color: var(--aside-hover-bg); /*variable */ 
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
 }
@@ -345,7 +370,7 @@ p{
 /*------------------------------------------------------------------------------*/
 
 iframe {
-    background-color: inherit;
+    background-color: var(--if);
     border: none;
     width: 100%;
     overflow-clip-margin: content-box;
@@ -368,7 +393,7 @@ section{
   border-width: 1px;
   margin: 2px;
   padding: 5px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--font-main);
 }
 
 img{
@@ -389,12 +414,12 @@ img{
   /* footer */
 
   .footer {
-    background-color: #6f9ac6; /*variable */
+    background-color: var(--footer-bg); /*variable */
     padding: 20px 0;
     text-align: center;
     font-family: 'Grand Hotel', cursive;
     font-size: larger;
-    color: ; /*variable */
+    color: var(--font-main); /*variable */
   }
   
   ul.social-network {
