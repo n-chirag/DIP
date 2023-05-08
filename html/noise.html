@@ -1,0 +1,80 @@
+<DOCTYPE! html>
+    <html>
+
+    <head>
+        <link rel="stylesheet" href="./css/innerstyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Shrikhand&family=Abril+Fatface&family=Bungee+Shade&family=Forum&family=Fredericka+the+Great&family=Glass+Antiqua&family=IBM+Plex+Sans+Arabic:wght@100&family=Josefin+Slab&family=Kreon&family=Life+Savers&family=Londrina+Shadow&family=Londrina+Sketch&family=Londrina+Solid:wght@100&family=Manrope&family=Nixie+One&family=Oldenburg&family=Pompiere&family=Questrial&family=Quicksand&family=Raleway+Dots&family=Rampart+One&family=Schibsted+Grotesk&family=Sniglet&family=Tilt+Prism&family=Wellfleet&family=Zen+Loop&family=Zen+Tokyo+Zoo&family=Zilla+Slab+Highlight&family=Pacifico&family=Grand+Hotel&family=Delius+Swash+Caps&family=Send+Flowers&Patrick+Hand&family=Quicksand:wght@400&family=Pangolin&family=Twinkle+Star&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>Test</title>
+    </head>
+
+    <body>
+
+        <h2> Salt And Pepper Noise</h2>
+
+        <div id="loading"></div>
+        <p id="status">OpenCV is loading...</p>
+        <div id="upload">
+            <table cellpadding="0" cellspacing="1" width="1" border="1">
+            <tbody><tr>
+                <td>
+                    <img id="imageSrc" height="209" width="294" alt="No Image">
+                </td>
+                <td>
+                    <img id="imageDst"  height="209" width="294" alt="No Image">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="caption"><center><i><b>Input image</b></i> </center><input type="file" id="fileInput" name="file" accept="image/*"></div>
+                </td>
+                <td>
+                    <div class="caption"><center><b><i>Output image</i></b></center></div>
+                </td>
+            </tr>
+            </tbody></table>
+        </div>
+
+        <script type="text/javascript">
+
+let imgElement = document.getElementById('imageSrc');
+let imgDest = document.getElementById('imageDst');
+let inputElement = document.getElementById('fileInput');
+
+inputElement.addEventListener('change', (e) => {
+    imgElement.src = URL.createObjectURL(e.target.files[0]);
+}, false);
+
+imgElement.onload = function() {
+    let canvas = document.createElement('canvas');
+    let context = canvas.getContext('2d');
+    canvas.width = imgElement.width;
+    canvas.height = imgElement.height;
+    context.drawImage(imgElement, 0, 0, imgElement.width, imgElement.height);
+    
+    let imageData = context.getImageData(0, 0, canvas.width, canvas.height);
+    let data = imageData.data;
+    let length = data.length;
+    let density = 0.01; // density of salt and pepper noise
+    
+    for (let i = 0; i < length; i += 4) {
+        let rand = Math.random();
+        if (rand < density / 2) {
+            data[i] = 0; // black
+            data[i + 1] = 0;
+            data[i + 2] = 0;
+        } else if (rand < density) {
+            data[i] = 255; // white
+            data[i + 1] = 255;
+            data[i + 2] = 255;
+        }
+    }
+    
+    context.putImageData(imageData, 0, 0);
+    imgDest.src = canvas.toDataURL();
+};
+</script>
+    </body>
+</html>
