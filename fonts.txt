@@ -1,9 +1,9 @@
-font-family: 'Abril Fatface', cursive;
+.font-family: 'Abril Fatface', cursive;
 font-family: 'Bungee Shade', cursive;
-font-family: 'Forum', cursive;
+.font-family: 'Forum', cursive;
 font-family: 'Fredericka the Great', cursive;
 font-family: 'Glass Antiqua', cursive;
-font-family: 'IBM Plex Sans Arabic', sans-serif;
+.font-family: 'IBM Plex Sans Arabic', sans-serif;
 font-family: 'Josefin Slab', serif;
 font-family: 'Kreon', serif;
 font-family: 'Life Savers', cursive;
