@@ -38,12 +38,12 @@ html{
   --dark-text: #f7f7f7;
   --dark-bg: #222430;
   --dark-theme: #bd93f9;
-  --dark-header-bg: #121212;
+  --dark-header-bg: #482e2e;
   --dark-font-main:white;
   --dark-main-bg: #121212;
   --dark-if:#121212 ;
   --dark-footer-bg: #1e262e;
-  --dark-aside-bg: #0a0808  ;
+  --dark-aside-bg: #0c0a0a  ;
   --dark-aside-font: #ffffff ;
   --dark-aside-hover-font: #ffffff  ;
   --dark-aside-hover-bg: var(--dark-main-bg);
@@ -350,7 +350,7 @@ h3{
 
 p{
   font-family: 'Quicksand', sans-serif;
-  font-size: 2rem ;
+  font-size: 1.5rem ;
   color: var(--font-main);
 
 }
