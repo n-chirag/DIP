@@ -8,8 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Shrikhand&family=Abril+Fatface&family=Bungee+Shade&family=Forum&family=Fredericka+the+Great&family=Glass+Antiqua&family=IBM+Plex+Sans+Arabic:wght@100&family=Josefin+Slab&family=Kreon&family=Life+Savers&family=Londrina+Shadow&family=Londrina+Sketch&family=Londrina+Solid:wght@100&family=Manrope&family=Nixie+One&family=Oldenburg&family=Pompiere&family=Questrial&family=Quicksand&family=Raleway+Dots&family=Rampart+One&family=Schibsted+Grotesk&family=Sniglet&family=Tilt+Prism&family=Wellfleet&family=Zen+Loop&family=Zen+Tokyo+Zoo&family=Zilla+Slab+Highlight&family=Pacifico&family=Grand+Hotel&family=Delius+Swash+Caps&family=Send+Flowers&Patrick+Hand&family=Quicksand:wght@400&family=Pangolin&family=Twinkle+Star&display=swap" rel="stylesheet">
         <meta charset="utf-8">
         <title>PixelPit</title>
-        <link rel="shortcut icon" type="image/x-icon" href="./images/logo.png">
-        <link rel="icon" type="image/x-icon" href="./images/animfavicon.ico">
+        <link rel="icon" type="image/x-icon" href="./images/logo123.png">
         <script src="https://kit.fontawesome.com/9e8966da3b.js" crossorigin="anonymous"></script>
     </head>
 <!---------------------------------------------------------------------------------------------------------------------> 
@@ -133,7 +132,7 @@
 <!--
                 <button class="dropdown-btn"><i class="fas fa-angle-right" aria-hidden="true"></i>Topic 
                     <i class="fa fa-caret-down"></i>
-                  </button>
+                </button>
                 <div class="dropdown-container">
                     <a href="#"><i class="fas fa-angle-right" aria-hidden="true"></i>Link 1</a>
                     <a href="#"><i class="fas fa-angle-right" aria-hidden="true"></i>Link 2</a>
@@ -151,23 +150,74 @@
                 <section id="introduction">
                     <h2>Introduction</h2>
                     <br>
-                    <p>Welcome To Pixelpit......</p>
+                    <p>Welcome To Pixelpit!<br>
+                    PixelPit is a webpage designed to learn and understand some of various components of Digital Image Processing in one place.<br><br>
+                    This website has been made solely for educational purposes as a part of a group project and we do not claim to own any 
+                    rights to the educational material we have used to develop it.<br><br>
+                    Web is the most ubiquitous open computing platform and now with HTML5 standards implemented in every browser,
+                    web applications are able to render images and videos using the image and video tags respectively and access 
+                    each pixel of an image or a video frame via the canvas API.<br>
+                    With abundance of available multimedia content, web developers are in need of a wide array of 
+                    image and vision processing algorithms in JavaScript to build innovative applications.<br><br>
+                    For this website, we have used the javascript version of OpenCV called OpenCV.js .<br>
+                    OpenCV.js is a JavaScript binding for selected subset of OpenCV functions for the web platform. <br>
+                    It allows emerging web applications with multimedia processing to benefit from the wide variety of 
+                    vision functions available in OpenCV.<br>
+                    Because OpenCV.js is able to run directly inside browser, the OpenCV.js web pages are intuitive and interactive.<br><br>
+                    Enjoy Learning!
+
+
+                    
+                    
+                    </p>
                 </section>
             </div>
 
                 <br><br>
 <!---------------------------------------------------------------------------------------------------------------------> 
                 <section id="test">
-                    <h2>Test</h2>
                     <br>
-                    <h3> Testing Sub-headline font </h3>
+                    <h3> How does this work? </h3>
 
-                    <p>Testing image upload....</p>
+                    <p>
+                        An Image is a 2-dimensional signal of a function <i>f(x,y)</i> where the values of the function represent
+                        the amplitude or intensity of the image.<br>
+                        In general, an image represented by a function <i>f(x,y)</i> is divided into <i>X rows</i> and <i>Y columns.</i><br>
+                        Thus the co-ordinates range from <i>{x=0,1,2,...,X-1}</i> and <i>{y=0,1,2,...,Y-1}.</i><br>
+                        At the intersection of these rows and columns, Pixels are present.<br><br>
+                        Two core components which were used to make this website funtional are:<br> 
+                        1. the HTML <strong><i>&lt;canvas&gt;</i></strong> element<br>
+                        2. the <strong><i>Mat</i></strong> class of the OpenCV.js library.<br><br> 
+                        The <strong><i>&lt;canvas&gt;</i></strong> tag in HTML is used to draw graphics on a web page using JavaScript. 
+                        It can be used to draw paths, boxes, texts, gradients, and adding images.
+                        It provides HTML a bitmapped surface to work with. A canvas is a rectangle like area on an HTML page. It is specified with canvas element. 
+                        By default, the <strong><i>&lt;canvas&gt;</i></strong> element has no border and no content, it is like a container.
+                        We must use a scripting language to draw the graphics. The <strong><i>&lt;canvas&gt;</i></strong>
+                        element allows for dynamic and scriptable rendering of 2D shapes and bitmap images. We use this element in conjunction with
+                        OpenCV.js to display the images we will perform operations on.<br><br>
+                        To capture an image, we use devices like cameras and scanners.
+                        These devices record numerical values of the image (Ex: pixel values).<br>
+                        OpenCV is a library which processes the digital images, 
+                        Therefore we need to store these images for processing.<br>
+                        The Mat class of OpenCV library is used to store the values of an image.
+                        It represents an n-dimensional array and is used to store image data of grayscale or color images,
+                        voxel volumes, vector fields, point clouds, tensors, histograms, etc.<br>
+                        Once this array has been created, and image can then be read and loaded onto it and
+                        it will store pixel values in their respective cells. We can then perform
+                        operations and modifications on this array and use the <strong><i>&lt;canvas&gt;</i></strong> element
+                        to display our results. <br><br>
+                        You can test this by uploading an image yourself!
+                        Click <a href="./images/Lenna.png" download> here</a> to download a sample image to test or 
+                        <a href="#images"> here</a> to choose from many other ones.<br>
+                        After you have chosen an image, click the <q>Choose File</q> button 
+                        in the below table, to choose an image to upload and see the output alongside.<br>
+                        You can perform the many image processing operations available on this website in the same manner.<br>
+                    </p>
 
                 <br><br>
 
                     <div>
-                         <iframe src="./html/test.html" width="100%" height="500px"></iframe>
+                        <iframe src="./html/test.html" width="100%" height="500px" loading="lazy"></iframe>
                     </div>
                 
                 </section>
@@ -176,30 +226,199 @@
                 <section id="color">
                     <h2>Color Conversion</h2>
 
-                    <p>RGB to B&W</p>
+                    <h3>Color Images</h3>
+                    <p>
+                        Every pixel in a color image has some color information. 
+                        Color images can be modelled as three band monochrome image data, where each band of data
+                        corresponds to a different color.
+                        Each pixel in a color image shall be composed of three channels and they are most
+                        commonly regarded as R, G,and B which represent Red, Green and Blue respectively. 
+                        The shade of each pixel would vary based on the intensity of R or G or B.<br><br>
+                        The RGB color model is based on the cartesian co-ordinate system.
+                        The color subspace of interest is a cube in which RGB vales are at 3 corners; 
+                        Cyan, Magenta and Yellow are at other 3 corners; Black is at the origin and white is at the corner
+                        farthest from the origin.
+                    </p>
+                        <br>
+                        <center><img class="theory" src="./images/The-RGB-color-space-visualized-as-a-cube.png" >
+                            <figcaption>The RGB color model mapped to a cube. </figcaption>
+                        </center>
+                        <br>
+                        <br>
+                    <p>
+                        The term <em>Full Color</em> is used to describe a 24 bit (8-bits each for channels R,G & B) RGB image.<br>
+                        The total number of colors in a 24 bit RGB image is (2<sup>8</sup>)<sup>3</sup> ≈ 16.8 million colors.
+                    </p>
+
+                    <h3>RGB to Grayscale</h3>
+                    <p>
+                        A Gray-Scale image is a special kind of image which has shaded from black to white, with shades being in between
+                        black and white. The most commonly used format is an *-bit format and it accomodates 256 different shades in it.<br>
+                        Gray-Scale images are known as monochromatic(singular color) images as they contain only grey level
+                        information and no color information. The number of bits usd for each pixel determines the number of different gray levels available.
+                    </p>
+                    <br>
+                        <center><img class="theory" src="./images/grayscale.png">
+                            <figcaption>The full range of colors that the grayscale model can describe </figcaption>
+                        </center>
+                    <br>
+                    <br>
+                    <p>
+                        On the one hand, grayscale images convey less information than RGB. 
+                        However, they are common in image processing because using a grayscale image requires 
+                        less available space and is faster, especially when we deal with complex computations.<br><br>
+                        Some commonly used methods to convert an image from RGB to grayscale are as follows:<br>
+                        1. <strong><em><u>Lightness Method</u></em></strong><br>
+                        A very simple method is to take the average value of the components with the highest
+                        and lowest values:   <img class="theory" src="./images/lightness method.svg"><br>
+                        We can easily see that this method presents a very serious weakness since one RGB 
+                        component is not used. This is definitely a problem because the amount of lightness
+                        that our eye perceives depends on all three basic colors.<br>
+                        2. <strong><em><u>Average Method</u></em></strong><br>
+                        Another method is to take the average value of the three components (red, green, and blue) 
+                        as the grayscale value:   <img class="theory" src="./images/average method.svg"><br>
+                        Although we now take into account all components, the average method is also
+                        problematic since it assigns the same weight to each component. 
+                        Based on research on human vision, we know that our eyes react to
+                        each color in a different manner. Specifically, our eyes are more sensitive to green,
+                        then to red, and finally to blue. Therefore, the weights in the above equation should change.<br>
+                        3. <strong><em><u>Luminosity Method</u></em></strong><br>
+                        The best method is the luminosity method that successfully solves the problems of previous methods.<br>
+                        Based on the aforementioned observations, we should take a weighted average of the components.
+                        The contribution of blue to the final value should decrease, and the contribution of green 
+                        should increase. After some experiments and more in-depth analysis, researchers have concluded 
+                        in the equation :  <img class="theory" src="./images/luminosity method.svg"><br><br>
+                        Finally, let’s apply these three methods in an image to further illustrate our results. 
+                        Below, we can see the results of applying the lightness, the average,
+                        and the luminosity method to convert an RGB image to grayscale:<br>
+                        <center>
+                            <img class="theory" src="./images/conversion.png">
+                            <figcaption>As expected, the lightness method is the worst since it completely fails to capture the 
+                                lightness of the input image. Among the other two, luminosity is the best since the average
+                                method produces a darker grayscale image.</figcaption>
+                        </center><br>
+                        
+                        <br>
+
+                    </p>
 
                     <br><br>
                 
                     <div >
-                         <iframe src="./html/b&w.html" width="100%" style="height: 447px;"></iframe>
+                        <iframe src="./html/b&w.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
-                    <p>RGB to YCrCb</p>
+                    <h3>RGB to YCrCb</h3>
+
+                    <p>
+                        One important task in image processing applications is the color space conversion. 
+                        Real-time images and videos are stored in RGB color space, because it is based on the 
+                        sensitivity of color detection cells in the human visual system. In digital image processing 
+                        the YCbCr color space is often used in order to take advantage of the lower resolution capability 
+                        of the human visual system for color with respect to luminosity. Thus, RGB to YCbCr conversion is 
+                        widely used in image and video processing.<br><br>
+                        
+                        One of two primary color spaces used to represent digital component video (the other is RGB). 
+                        The difference between YCbCr and RGB is that YCbCr represents color as brightness and two color 
+                        difference signals, while RGB represents color as red, green and blue. In YCbCr, the Y is the brightness (luma),
+                        Cb is blue minus luma (B-Y) and Cr is red minus luma (R-Y).<br>
+                        <center>
+                            <img class="theory" src="./images/ycbcr.png">
+                            <figcaption>The CbCr plane at constant luma Y′=0.5</figcaption>
+                        </center><br><br>
+                        <p>
+                        Given a digital pixel represented in RGB format, 8 bits per sample,
+                        where 0 and 255 represents the black and white color, respectively, 
+                        the YCbCr components can be obtained according to equations (1) to (3):<br>
+                        <center>
+                            <img class="theory" src="./images/rgb_eq1.svg">
+                            <figcaption>Equations (1) to (3): RGB to YCbCr conversion</figcaption>
+                        </center><br>
+                    </p>
+                    <p>
+                        Image and Video consumes a lot of data. One of the reasons is because they are represented 
+                        in the RGB format. However, is not worth to store or transmit information in this color space representaion, 
+                        once it has a large bandwidth. Thus all the pixels should be converted to YCbCr to accomplish that.
+                    </p>
+                    </p>
 
                     <br><br>
                 
                     <div >
-                         <iframe src="./html/ycrcb.html" width="100%" style="height: 447px;"></iframe>
+                        <iframe src="./html/ycrcb.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
 
-                    <p>RGB to HSV</p>
+                    <h3>RGB to HSV</h3>
+                    <p>
+                        HSV (for hue, saturation, value; also known as HSB, for hue, saturation, brightness) 
+                        is an alternative representation of the RGB color model, designed in the 1970s by computer graphics
+                        researchers to more closely align with the way human vision perceives color-making attributes.
+                        In this model, colors of each hue are arranged in a radial slice, 
+                        around a central axis of neutral colors which ranges from black at the bottom to white at the top.
+                        The HSV representation models how colors appear under light.<br><br>
+
+                        <center>
+                            <img class="theory" src="./images/hsv cylinder.png">
+                            <figcaption>HSV Cylinder </figcaption>
+
+                        </center><br>
+                        <center>
+        
+                            <img class="theory" src="./images/hsv cone.png">
+                            <figcaption>Using chroma (range of RGB values) instead of saturation gives an HSV Cone</figcaption>
+                            
+                        </center><br>
+                    </p>
+                    <p>
+                        Hues are the three primary colors (red, blue, and yellow) and the three secondary colors (orange, green, and violet)
+                        that appear in the color wheel or color circle. When you refer to hue, you are referring to pure color,
+                        or the visible spectrum of basic colors that can be seen in a rainbow.<br>
+                        In HSV, hue is a number in the interval (0, 360). A color's hue is its general position on a color wheel,
+                        where red is at 0°, green is at 120°, and blue is at 240°.
+                        For example the RGB code of a yellow/orange color has high red and green components and a low blue component,
+                        with the red level slightly higher than the green. On the color wheel, the angle of this hue is a little less than 60°. 
+                        The hue of any neutral color--white, gray, or black--is set at 0°.<br><br>
+
+                        Color value refers to the relative lightness or darkness of a color. 
+                        We perceive color value based on the quantity of light reflected off of 
+                        a surface and absorbed by the human eye. We refer to the intensity of the light that reaches the eye as “luminance.”<br>
+                        Value, in HSV, is the highest value among the three R, G, and B numbers. 
+                        This number is divided by 255 to scale it between 0 and 1. In terms of perception, 
+                        HSV Value represents how light, bright, or intense a color is.
+                        Value does not distinguish white and pure colors, all of which have V = 1.<br><br>
+
+                        Color saturation is the purity and intensity of a color as displayed in an image. 
+                        The higher the saturation of a color, the more vivid and intense it is. 
+                        The lower a color’s saturation, or chroma, the closer it is to pure gray on the grayscale.<br>
+                        HSV Saturation measures how close a color is to the grayscale. S ranges from 0 to 1.
+                        White, gray, and black all have a saturation level of 0. Brighter, purer colors have a saturation near 1.<br>
+                        <center>
+        
+                            <img class="theory" src="./images/hsv-color-model.png">
+                            
+                        </center><br>
+                    </p>
+                    <p>
+                        
+                        The formula for converting from RGB color model to HSV model is as follows:<br>
+                        <center>
+        
+                            <img class="theory" src="./images/Screenshot_57.png">
+                            
+                        </center><br>
+                    </p>
+                    <p>
+                        Adjusting the hue, saturation, and value can greatly impact the overall composition of your images. 
+                        Even the smallest adjustment can affect the way your photograph is perceived by the viewer.
+                    
+                    </p>
 
                     <br><br>
                 
                     <div >
-                         <iframe src="./html/hsv.html" width="100%" style="height: 447px;"></iframe>
+                        <iframe src="./html/hsv.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -209,12 +428,32 @@
 <!---------------------------------------------------------------------------------------------------------------------> 
                 <section id="binary">
                     <h2>Binary</h2>
-                    <p>Binary Image</p>
+                    <p>
+                        Binary Images are the simplest type of images and can take only 2 values, typically black and white or 0 and 1.
+                        They are referred to as 1-bit images because it takes only 1 binary digit to represent each pixel.<br>
+
+                        <center>
+                            <img class="theory" src="./images/binary 2.png">
+                        </center><br>
+                    </p>
+                    <p>
+                        These type of images are used frequently in applications where the informatin required is the general shape or outline.
+                        Binary images often arise in digital image processing as masks or thresholding, and dithering.
+                        Some input/output devices, such as laser printers, fax machines, and bilevel computer displays, can only handle bilevel images.<br><br>
+                        Binary images are produced from color images by segmentation. 
+                        <a href="#segment">Segmentation</a> is the process of assigning each pixel in the source image to two or more classes.
+                        If there are more than two classes then the usual result is several binary images. 
+                        The simplest form of segmentation is probably Otsu's method which assigns pixels to foreground or background based on grayscale intensity.
+                        Another method is the watershed algorithm. Edge detection also often creates a binary image with some pixels assigned to edge pixels,
+                        and is also a first step in further segmentation.<br><br>
+                        Binary images are often created from gray-scale images via a threshold operation, where every pixel above the threshold value is turned
+                        white(1) and those below it are turned black(0).
+                    </p>
 
                 <br><br>
 
                     <div>
-                         <iframe src="./html/binary.html" width="100%" style="height: 447px;"></iframe>
+                        <iframe src="./html/binary.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
                 
                 </section>
@@ -222,13 +461,18 @@
 <!---------------------------------------------------------------------------------------------------------------------> 
                 <section id="gtrans">
                     <h2>Geometric Transformations</h2>
+                    <p>
+                        Geometric transformation is a fundamental technique used in image processing that involves manipulating the 
+                        spatial arrangement of pixels in an image. It is used to modify the geometric properties of an image, 
+                        such as its size, shape, position, and orientation.
+                    </p>
 
                     <br><br>
                     <p>Affine transformation</p>
                     <br><br>
 
                     <div>
-                         <iframe src="./html/affine.html" width="100%" style="height: 447px;"></iframe>
+                        <iframe src="./html/affine.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -236,7 +480,7 @@
                     <br><br>
 
                     <div>
-                         <iframe src="./html/scaling.html" width="100%" style="height: 447px;"></iframe>
+                        <iframe src="./html/scaling.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -244,7 +488,7 @@
                     <br><br>
 
                     <div>
-                         <iframe src="./html/rotate.html" width="100%" style="height: 447px;"></iframe>
+                        <iframe src="./html/rotate.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
                 
                 </section>
@@ -259,7 +503,7 @@
                     <br><br>
                 
                     <div >
-                         <iframe src="./html/bthresh.html" width="100%" style="height: 447px;"></iframe>
+                        <iframe src="./html/bthresh.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <p>Adaptive Thresholding</p>
@@ -267,7 +511,7 @@
                     <br><br>
                 
                     <div >
-                         <iframe src="./html/athresh.html" width="100%" style="height: 447px;"></iframe>
+                        <iframe src="./html/athresh.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -283,7 +527,7 @@
                     <br><br>
 
                     <div>
-                        <iframe src="./html/ablur.html" width="100%" style="height: 447px;"></iframe>
+                        <iframe src="./html/ablur.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -291,7 +535,7 @@
                     <br><br>
 
                     <div>
-                        <iframe src="./html/gblur.html" width="100%" style="height: 447px;"></iframe>
+                        <iframe src="./html/gblur.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -299,7 +543,7 @@
                     <br><br>
 
                     <div>
-                        <iframe src="./html/mblur.html" width="100%" style="height: 447px;"></iframe>
+                        <iframe src="./html/mblur.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -307,7 +551,7 @@
                     <br><br>
 
                     <div>
-                        <iframe src="./html/bfilter.html" width="100%" style="height: 447px;"></iframe>
+                        <iframe src="./html/bfilter.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                 </section>
@@ -321,7 +565,7 @@
                     <br><br>
 
                     <div>
-                        <iframe src="./html/erosion.html" width="100%" style="height: 447px;"></iframe>
+                        <iframe src="./html/erosion.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -329,7 +573,7 @@
                     <br><br>
 
                     <div>
-                        <iframe src="./html/dilation.html" width="100%" style="height: 447px;"></iframe>
+                        <iframe src="./html/dilation.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -337,7 +581,7 @@
                     <br><br>
 
                     <div>
-                        <iframe src="./html/opening.html" width="100%" style="height: 447px;"></iframe>
+                        <iframe src="./html/opening.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -345,7 +589,7 @@
                     <br><br>
 
                     <div>
-                        <iframe src="./html/closing.html" width="100%" style="height: 447px;"></iframe>
+                        <iframe src="./html/closing.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -353,7 +597,7 @@
                     <br><br>
 
                     <div>
-                        <iframe src="./html/morphgrad.html" width="100%" style="height: 447px;"></iframe>
+                        <iframe src="./html/morphgrad.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -361,7 +605,7 @@
                     <br><br>
 
                     <div>
-                        <iframe src="./html/tophat.html" width="100%" style="height: 447px;"></iframe>
+                        <iframe src="./html/tophat.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -369,7 +613,7 @@
                     <br><br>
 
                     <div>
-                        <iframe src="./html/blackhat.html" width="100%" style="height: 447px;"></iframe>
+                        <iframe src="./html/blackhat.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -377,7 +621,7 @@
                     <br><br>
 
                     <div>
-                        <iframe src="./html/structele.html" width="100%" style="height: 447px;"></iframe>
+                        <iframe src="./html/structele.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                 </section>
@@ -390,8 +634,8 @@
 
                     <br><br>
                 
-                    <div >
-                         <iframe src="./html/sobel.html" width="100%" style="height: 447px;"></iframe>
+                    <div > 
+                        <iframe src="./html/sobel.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <p>Scharr derivative</p>
@@ -399,7 +643,7 @@
                     <br><br>
                 
                     <div >
-                         <iframe src="./html/scharr.html" width="100%" style="height: 447px;"></iframe>
+                        <iframe src="./html/scharr.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -409,7 +653,7 @@
                     <br><br>
                 
                     <div >
-                         <iframe src="./html/laplachian.html" width="100%" style="height: 447px;"></iframe>
+                        <iframe src="./html/laplachian.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -419,7 +663,7 @@
                     <br><br>
                 
                     <div >
-                         <iframe src="./html/canny.html" width="100%" style="height: 447px;"></iframe>
+                        <iframe src="./html/canny.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -435,7 +679,7 @@
                     <br><br>
                 
                     <div >
-                         <iframe src="./html/histogram.html" width="100%" style="height: 447px;"></iframe>
+                        <iframe src="./html/histogram.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -445,7 +689,7 @@
                     <br><br>
                 
                     <div >
-                         <iframe src="./html/histeq.html" width="100%" style="height: 447px;"></iframe>
+                        <iframe src="./html/histeq.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -461,7 +705,7 @@
                 <br><br>
 
                     <div>
-                         <iframe src="./html/fourier.html" width="100%" style="height: 447px;"></iframe>
+                        <iframe src="./html/fourier.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
                 
                 </section>
@@ -475,7 +719,7 @@
                     <br><br>
                 
                     <div >
-                         <iframe src="./html/houghline.html" width="100%" style="height: 447px;"></iframe>
+                        <iframe src="./html/houghline.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -485,7 +729,7 @@
                     <br><br>
                 
                     <div >
-                         <iframe src="./html/houghlinep.html" width="100%" style="height: 447px;"></iframe>
+                        <iframe src="./html/houghlinep.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -497,7 +741,7 @@
                     <br><br>
                 
                     <div >
-                         <iframe src="./html/houghcircle.html" width="100%" style="height: 447px;"></iframe>
+                        <iframe src="./html/houghcircle.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -512,7 +756,7 @@
                 <br><br>
 
                     <div>
-                        <iframe src="./html/segmentation.html" width="100%" style="height: 600px;"></iframe>
+                        <iframe src="./html/segmentation.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                 </section>
@@ -532,47 +776,47 @@
                     Color Images
                 </p>
                 <br>
-                <a class="samp" href="./images/color butterfly.jpeg" download="Butterfly"><img class="res" src="./images/color butterfly.jpeg" alt="Butterfly"></a>&nbsp;
-                <a class="samp" href="./images/color flower.jpg" download="Flower"><img class="res" src="./images/color flower.jpg" alt="Flower"></a>&nbsp;
-                <a class="samp" href="./images/color man.jpeg" download="Man"><img class="res" src="./images/color man.jpeg" alt="Man"></a>&nbsp;
-                <a class="samp" href="./images/color rose.jpeg" download="Rose"><img class="res" src="./images/color rose.jpeg" alt="Rose"></a>&nbsp;
-                <a class="samp" href="./images/coins.png" download="Coins"><img class="res" src="./images/coins.png" alt="Coins"></a>&nbsp;
+                <a class="samp" href="./images/color butterfly.jpeg" download="Butterfly"><img class="res" src="./images/color butterfly.jpeg" alt="Butterfly" loading=" "></a>&nbsp;
+                <a class="samp" href="./images/color flower.jpg" download="Flower"><img class="res" src="./images/color flower.jpg" alt="Flower" loading=" "></a>&nbsp;
+                <a class="samp" href="./images/color man.jpeg" download="Man"><img class="res" src="./images/color man.jpeg" alt="Man" loading=" "></a>&nbsp;
+                <a class="samp" href="./images/color rose.jpeg" download="Rose"><img class="res" src="./images/color rose.jpeg" alt="Rose" loading=" "></a>&nbsp;
+                <a class="samp" href="./images/coins.png" download="Coins"><img class="res" src="./images/coins.png" alt="Coins" loading=" "></a>&nbsp;
                 <br>
                 <br>
                 <p class="sample">   
                     Black And White Images
                 </p>
                 <br>
-                <a class="samp" href="./images/bw butterfly.jpg" download="B&W Butterfly"><img class="res" src="./images/bw butterfly.jpg" alt="B&W Butterfly"></a>&nbsp;
-                <a class="samp" href="./images/bw flower.jpeg" download="B&W Flower"><img class="res" src="./images/bw flower.jpeg" alt="B&W Flower"></a>&nbsp;
-                <a class="samp" href="./images/bw dog.jpg" download="B&W Dog"><img class="res" src="./images/bw dog.jpg" alt="B&W Dog"></a>&nbsp;
-                <a class="samp" href="./images/bw lion.jpg" download="B&W Lion"><img class="res" src="./images/bw lion.jpg" alt="B&W Lion"></a>&nbsp;
-                <a class="samp" href="./images/star.png" download="B&W Star"><img class="res" src="./images/star.png" alt="Star"></a>&nbsp;
+                <a class="samp" href="./images/bw butterfly.jpg" download="B&W Butterfly"><img class="res" src="./images/bw butterfly.jpg" alt="B&W Butterfly" loading=" "></a>&nbsp;
+                <a class="samp" href="./images/bw flower.jpeg" download="B&W Flower"><img class="res" src="./images/bw flower.jpeg" alt="B&W Flower" loading=" "></a>&nbsp;
+                <a class="samp" href="./images/bw dog.jpg" download="B&W Dog"><img class="res" src="./images/bw dog.jpg" alt="B&W Dog" loading=" "></a>&nbsp;
+                <a class="samp" href="./images/bw lion.jpg" download="B&W Lion"><img class="res" src="./images/bw lion.jpg" alt="B&W Lion" loading=" "></a>&nbsp;
+                <a class="samp" href="./images/star.png" download="B&W Star"><img class="res" src="./images/star.png" alt="Star" loading=" "></a>&nbsp;
                 <br>
                 <br>
                 <p class="sample">   
                     RGB Images
                 </p>
                 <br>
-                <a class="samp" href="./images/rgb bubbles.jpg" download="Bubbles"><img class="res" src="./images/rgb bubbles.jpg" alt="Bubbles"></a>&nbsp;
-                <a class="samp" href="./images/rgb circles.png" download="B&W Flower"><img class="res" src="./images/rgb circles.png" alt="Circles"></a>&nbsp;
-                <a class="samp" href="./images/rgb dog.jpg" download="Dog"><img class="res" src="./images/rgb dog.jpg" alt="Dog"></a>&nbsp;
-                <a class="samp" href="./images/rgb parrot.jpeg" download="Parrot"><img class="res" src="./images/rgb parrot.jpeg" alt="Parrot"></a>&nbsp;
+                <a class="samp" href="./images/rgb bubbles.jpg" download="Bubbles"><img class="res" src="./images/rgb bubbles.jpg" alt="Bubbles" loading=" "></a>&nbsp;
+                <a class="samp" href="./images/rgb circles.png" download="B&W Flower"><img class="res" src="./images/rgb circles.png" alt="Circles" loading=" "></a>&nbsp;
+                <a class="samp" href="./images/rgb dog.jpg" download="Dog"><img class="res" src="./images/rgb dog.jpg" alt="Dog" loading=" "></a>&nbsp;
+                <a class="samp" href="./images/rgb parrot.jpeg" download="Parrot"><img class="res" src="./images/rgb parrot.jpeg" alt="Parrot" loading=" "></a>&nbsp;
                 <br>
                 <br>
                 <p class="sample">   
                     Noisy Images
                 </p>
                 <br>
-                <a class="samp" href="./images/noisy 1.png" download="Noisy 1"><img class="res" src="./images/noisy 1.png" alt="Noisy 1"></a>&nbsp;
-                <a class="samp" href="./images/noisy 2.png" download="Noisy 2"><img class="res" src="./images/noisy 2.png" alt="Noisy 2"></a>&nbsp;
-                <a class="samp" href="./images/noisy 3.jpg" download="Noisy 3"><img class="res" src="./images/noisy 3.jpg" alt="Noisy 3"></a>&nbsp;
-                <a class="samp" href="./images/noisy 4.jpg" download="Noisy 4"><img class="res" src="./images/noisy 4.jpg" alt="Noisy 4"></a>&nbsp;
+                <a class="samp" href="./images/noisy 1.png" download="Noisy 1"><img class="res" src="./images/noisy 1.png" alt="Noisy 1" loading=" "></a>&nbsp;
+                <a class="samp" href="./images/noisy 2.png" download="Noisy 2"><img class="res" src="./images/noisy 2.png" alt="Noisy 2" loading=" "></a>&nbsp;
+                <a class="samp" href="./images/noisy 3.jpg" download="Noisy 3"><img class="res" src="./images/noisy 3.jpg" alt="Noisy 3" loading=" "></a>&nbsp;
+                <a class="samp" href="./images/noisy 4.jpg" download="Noisy 4"><img class="res" src="./images/noisy 4.jpg" alt="Noisy 4" loading=" "></a>&nbsp;
                 <br>
-                <a class="samp" href="./images/noisy 5.jpg" download="Noisy 5"><img class="res" src="./images/noisy 5.jpg" alt="Noisy 5"></a>&nbsp;
-                <a class="samp" href="./images/noisy 6.jpeg" download="Noisy 6"><img class="res" src="./images/noisy 6.jpeg" alt="Noisy 6"></a>&nbsp;
-                <a class="samp" href="./images/noisy 7.jpeg" download="Noisy 7"><img class="res" src="./images/noisy 7.jpeg" alt="Noisy 7"></a>&nbsp;
-                <a class="samp" href="./images/noisy 7.jpeg" download="Noisy 8"><img class="res" src="./images/noisy 8.jpeg" alt="Noisy 8"></a>&nbsp;
+                <a class="samp" href="./images/noisy 5.jpg" download="Noisy 5"><img class="res" src="./images/noisy 5.jpg" alt="Noisy 5" loading=" "></a>&nbsp;
+                <a class="samp" href="./images/noisy 6.jpeg" download="Noisy 6"><img class="res" src="./images/noisy 6.jpeg" alt="Noisy 6" loading=" "></a>&nbsp;
+                <a class="samp" href="./images/noisy 7.jpeg" download="Noisy 7"><img class="res" src="./images/noisy 7.jpeg" alt="Noisy 7" loading=" "></a>&nbsp;
+                <a class="samp" href="./images/noisy 7.jpeg" download="Noisy 8"><img class="res" src="./images/noisy 8.jpeg" alt="Noisy 8" loading=" "></a>&nbsp;
                 <br>
                 <br>
                 

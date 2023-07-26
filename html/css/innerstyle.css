@@ -9,6 +9,10 @@ body,div,p{
     font-family:'Quicksand',sans-serif;
 }
 
+#status{
+    color: #777;
+}
+
 /*------------------------------------------------------------------------------*/
 
 body{
@@ -95,7 +99,7 @@ tr {
     display: table-row;
     vertical-align: inherit;
     border-color: inherit;
-    background-color: rgb(255, 255, 255);
+    background-color: #bdbdbd;
 }
 
 /*------------------------------------------------------------------------------*/

@@ -6,43 +6,53 @@ html{
 
 :root{
   /* Light mode */
-  --light-switch-shadow: #373d4e;
+  --light-switch-shadow: #1a1f2b;
   --light-switch-icon: "🌚";
   --light-switch-text: "dark mode?";
   --light-text: #14161f;
   --light-bg: #f7f7f7;
   --light-theme: #d34a97;
-  --light-header-bg:#e4bebe;
+  --light-header-bg:#EAC7C7;
   --light-font-main: #000000;
-  --light-main-bg: #ffffff;
-  --light-if: #ffffff;
+  --light-main-bg: #dee4e7;
+  --light-if: #dee4e7;
   --light-footer-bg:#6f9ac6; 
-  --light-aside-bg: #0e1831  ;
-  --light-aside-font: #ffffff ;
-  --light-aside-hover-font: #182fa3  ;
-  --light-aside-hover-bg: #ffffff ;
-  --light-collapsible:#e84f4f;
-  --light-collapsible-hover:#ed8282;
+  --light-aside-bg: #A0C3D2  ;
+  --light-aside-font: #0f0d0d ;
+  --light-aside-hover-font: #06091a  ;
+  --light-aside-hover-bg: var(--light-main-bg) ;
+  --light-collapsible:#6dbbdc;
+  --light-collapsible-hover:#9ab4c0;
+  --light-scroll-thumb:#cf8a85;
+  --light-scroll-track:#cbbcc6;
+  --light-header-border:#E97777;
+  --light-collapsible-font:#060609;
+  --light-img-b:#060609;
+  
 
   /* Dark mode */
   --dark-switch-shadow: #fce477;
-  --dark-switch-icon: "🌝";
+  --dark-switch-icon: "🌞";
   --dark-switch-text: "light mode?";
   --dark-text: #f7f7f7;
   --dark-bg: #222430;
   --dark-theme: #bd93f9;
-  --dark-header-bg: #111213;
+  --dark-header-bg: #482e2e;
   --dark-font-main:white;
-  --dark-main-bg: #1e1415;
-  --dark-if:#989393 ;
+  --dark-main-bg: #121212;
+  --dark-if:#121212 ;
   --dark-footer-bg: #1e262e;
-  --dark-aside-bg: #000000  ;
+  --dark-aside-bg: #0c0a0a  ;
   --dark-aside-font: #ffffff ;
   --dark-aside-hover-font: #ffffff  ;
   --dark-aside-hover-bg: var(--dark-main-bg);
-  --dark-collapsible: #3d1d1d;
-  --dark-collapsible-hover:#6b4646;
-  ;
+  --dark-collapsible: #474E68;
+  --dark-collapsible-hover:#878da4;
+  --dark-scroll-thumb:#6e302b;
+  --dark-scroll-track:#453540;
+  --dark-header-border:#957777;
+  --dark-collapsible-font:#f7f7f7;
+  --dark-img-b:#83838b;
 
 
   /* Default mode */
@@ -63,6 +73,12 @@ html{
   --aside-hover-bg: var(--light-aside-hover-bg);
   --collapsible: var(--light-collapsible);
   --collapsible-hover: var(--light-collapsible-hover);
+  --scroll-thumb: var(--light-scroll-thumb);
+  --scroll-track: var(--light-scroll-track);
+  --header-border: var(--light-header-border);
+  --collapsible-bg:var(--light-collapsible-bg);
+  --collapsible-font: var(--light-collapsible-font);
+  --img-b: var(--light-img-b);
 }
 
 
@@ -85,6 +101,12 @@ html{
   --aside-hover-bg: var(--dark-aside-hover-bg);
   --collapsible: var(--dark-collapsible);
   --collapsible-hover: var(--dark-collapsible-hover);
+  --scroll-thumb:var(--dark-scroll-thumb);
+  --scroll-track:var(--dark-scroll-track);
+  --header-border: var(--dark-header-border);
+  --collapsible-bg:var(--dark-collapsible-bg);
+  --collapsible-font: var(--dark-collapsible-font);
+  --img-b: var(--dark-img-b);
 }
 
 .theme {
@@ -148,14 +170,13 @@ html{
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #d3bbc6;
+  background-color: var(--scroll-track);
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
   border-radius: 5px ;
-  background-color: #b27a46;
+  background-color: var(--scroll-thumb);
 }
 
 /*------------------------------------------------------------------------------*/
@@ -175,7 +196,7 @@ header {
     border-width: 2px;
     padding: 10px;
     box-sizing: border-box;
-    border-bottom: 10px solid #ae6b6b;
+    border-bottom: 10px solid var(--header-border);/*#ae6b6b */
 }
 
 
@@ -233,7 +254,7 @@ aside{
   color: var(--aside-font); /*variable */
   position:sticky;
   height: auto;
-  width: 250px;
+  min-width: 250px;
   top: 0;
   left: 0;
   overflow-x: hidden;
@@ -310,23 +331,28 @@ main {
 /*------------------------------------------------------------------------------*/
 
 h2{
-  font-family: 'Londrina Shadow', cursive;
-  font-size: 3.5rem;
+  font-family:'Abril Fatface', cursive;
+  font-size: 4rem;
   text-decoration:  ;
   color: var(--font-main);
+  font-weight: 100;
+  border-bottom: 1px solid var(--font-main);
 }
 
 h3{
   font-family: 'Zen Loop', cursive;
-  font-size: 2.2rem;
+  font-size: 3rem;
   text-decoration: underline;
   color: var(--font-main);
+  font-weight: 150;
 }
 
 p{
   font-family: 'Quicksand', sans-serif;
-  font-size: 20px ;
+  font-size: 1.5rem ;
   color: var(--font-main);
+  line-height: 1.5;
+  font-weight: 100;
 
 }
 
@@ -335,7 +361,7 @@ p{
 .collapsible {
   background-color: var(--collapsible);
   font-family: 'Quicksand', sans-serif;
-  color: white;
+  color: var(--collapsible-font);
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -381,7 +407,7 @@ p{
 .res{
   border:solid;
   border-radius: 2px;
-  border-color: black;
+  border-color: var(--img-b);
   margin: 1px;
   padding: 1px;
 }
@@ -413,7 +439,7 @@ section{
   border-width: 1px;
   margin: 2px;
   padding: 5px;
-  border-bottom: 1px solid var(--font-main);
+  border-bottom: 1px  var(--font-main);
 }
 
 img{
@@ -422,6 +448,13 @@ img{
   max-width: 300px;
   overflow-clip-margin: content-box;
   overflow: clip;
+}
+
+.theory{
+  max-width: 500px;
+  max-height: 500px;
+  aspect-ratio: auto;
+
 }
 
 
