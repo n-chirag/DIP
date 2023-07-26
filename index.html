@@ -8,8 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Shrikhand&family=Abril+Fatface&family=Bungee+Shade&family=Forum&family=Fredericka+the+Great&family=Glass+Antiqua&family=IBM+Plex+Sans+Arabic:wght@100&family=Josefin+Slab&family=Kreon&family=Life+Savers&family=Londrina+Shadow&family=Londrina+Sketch&family=Londrina+Solid:wght@100&family=Manrope&family=Nixie+One&family=Oldenburg&family=Pompiere&family=Questrial&family=Quicksand&family=Raleway+Dots&family=Rampart+One&family=Schibsted+Grotesk&family=Sniglet&family=Tilt+Prism&family=Wellfleet&family=Zen+Loop&family=Zen+Tokyo+Zoo&family=Zilla+Slab+Highlight&family=Pacifico&family=Grand+Hotel&family=Delius+Swash+Caps&family=Send+Flowers&Patrick+Hand&family=Quicksand:wght@400&family=Pangolin&family=Twinkle+Star&display=swap" rel="stylesheet">
         <meta charset="utf-8">
         <title>PixelPit</title>
-        <link rel="shortcut icon" type="image/x-icon" href="./images/logo.png">
-        <link rel="icon" type="image/x-icon" href="./images/animfavicon.ico">
+        <link rel="icon" type="image/x-icon" href="./images/logo123.png">
         <script src="https://kit.fontawesome.com/9e8966da3b.js" crossorigin="anonymous"></script>
     </head>
 <!---------------------------------------------------------------------------------------------------------------------> 
@@ -306,7 +305,7 @@
                     <br><br>
                 
                     <div >
-                        <iframe src="./html/b&w.html" width="100%" style="height: 447px;" loading="lazy"></iframe>
+                        <iframe src="./html/b&w.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <h3>RGB to YCrCb</h3>
@@ -346,7 +345,7 @@
                     <br><br>
                 
                     <div >
-                        <iframe src="./html/ycrcb.html" width="100%" style="height: 447px;" loading="lazy"></iframe>
+                        <iframe src="./html/ycrcb.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -419,7 +418,7 @@
                     <br><br>
                 
                     <div >
-                        <iframe src="./html/hsv.html" width="100%" style="height: 447px;" loading="lazy"></iframe>
+                        <iframe src="./html/hsv.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -429,12 +428,32 @@
 <!---------------------------------------------------------------------------------------------------------------------> 
                 <section id="binary">
                     <h2>Binary</h2>
-                    <p>Binary Image</p>
+                    <p>
+                        Binary Images are the simplest type of images and can take only 2 values, typically black and white or 0 and 1.
+                        They are referred to as 1-bit images because it takes only 1 binary digit to represent each pixel.<br>
+
+                        <center>
+                            <img class="theory" src="./images/binary 2.png">
+                        </center><br>
+                    </p>
+                    <p>
+                        These type of images are used frequently in applications where the informatin required is the general shape or outline.
+                        Binary images often arise in digital image processing as masks or thresholding, and dithering.
+                        Some input/output devices, such as laser printers, fax machines, and bilevel computer displays, can only handle bilevel images.<br><br>
+                        Binary images are produced from color images by segmentation. 
+                        <a href="#segment">Segmentation</a> is the process of assigning each pixel in the source image to two or more classes.
+                        If there are more than two classes then the usual result is several binary images. 
+                        The simplest form of segmentation is probably Otsu's method which assigns pixels to foreground or background based on grayscale intensity.
+                        Another method is the watershed algorithm. Edge detection also often creates a binary image with some pixels assigned to edge pixels,
+                        and is also a first step in further segmentation.<br><br>
+                        Binary images are often created from gray-scale images via a threshold operation, where every pixel above the threshold value is turned
+                        white(1) and those below it are turned black(0).
+                    </p>
 
                 <br><br>
 
                     <div>
-                        <iframe src="./html/binary.html" width="100%" style="height: 447px;" loading="lazy"></iframe>
+                        <iframe src="./html/binary.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
                 
                 </section>
@@ -442,13 +461,18 @@
 <!---------------------------------------------------------------------------------------------------------------------> 
                 <section id="gtrans">
                     <h2>Geometric Transformations</h2>
+                    <p>
+                        Geometric transformation is a fundamental technique used in image processing that involves manipulating the 
+                        spatial arrangement of pixels in an image. It is used to modify the geometric properties of an image, 
+                        such as its size, shape, position, and orientation.
+                    </p>
 
                     <br><br>
                     <p>Affine transformation</p>
                     <br><br>
 
                     <div>
-                        <iframe src="./html/affine.html" width="100%" style="height: 447px;" loading="lazy"></iframe>
+                        <iframe src="./html/affine.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -456,7 +480,7 @@
                     <br><br>
 
                     <div>
-                        <iframe src="./html/scaling.html" width="100%" style="height: 447px;" loading="lazy"></iframe>
+                        <iframe src="./html/scaling.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -464,7 +488,7 @@
                     <br><br>
 
                     <div>
-                        <iframe src="./html/rotate.html" width="100%" style="height: 447px;" loading="lazy"></iframe>
+                        <iframe src="./html/rotate.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
                 
                 </section>
@@ -479,7 +503,7 @@
                     <br><br>
                 
                     <div >
-                        <iframe src="./html/bthresh.html" width="100%" style="height: 447px;" loading="lazy"></iframe>
+                        <iframe src="./html/bthresh.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <p>Adaptive Thresholding</p>
@@ -487,7 +511,7 @@
                     <br><br>
                 
                     <div >
-                        <iframe src="./html/athresh.html" width="100%" style="height: 447px;" loading="lazy"></iframe>
+                        <iframe src="./html/athresh.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -503,7 +527,7 @@
                     <br><br>
 
                     <div>
-                        <iframe src="./html/ablur.html" width="100%" style="height: 447px;" loading="lazy"></iframe>
+                        <iframe src="./html/ablur.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -511,7 +535,7 @@
                     <br><br>
 
                     <div>
-                        <iframe src="./html/gblur.html" width="100%" style="height: 447px;" loading="lazy"></iframe>
+                        <iframe src="./html/gblur.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -519,7 +543,7 @@
                     <br><br>
 
                     <div>
-                        <iframe src="./html/mblur.html" width="100%" style="height: 447px;" loading="lazy"></iframe>
+                        <iframe src="./html/mblur.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -527,7 +551,7 @@
                     <br><br>
 
                     <div>
-                        <iframe src="./html/bfilter.html" width="100%" style="height: 447px;" loading="lazy"></iframe>
+                        <iframe src="./html/bfilter.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                 </section>
@@ -541,7 +565,7 @@
                     <br><br>
 
                     <div>
-                        <iframe src="./html/erosion.html" width="100%" style="height: 447px;" loading="lazy"></iframe>
+                        <iframe src="./html/erosion.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -549,7 +573,7 @@
                     <br><br>
 
                     <div>
-                        <iframe src="./html/dilation.html" width="100%" style="height: 447px;" loading="lazy"></iframe>
+                        <iframe src="./html/dilation.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -557,7 +581,7 @@
                     <br><br>
 
                     <div>
-                        <iframe src="./html/opening.html" width="100%" style="height: 447px;" loading="lazy"></iframe>
+                        <iframe src="./html/opening.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -565,7 +589,7 @@
                     <br><br>
 
                     <div>
-                        <iframe src="./html/closing.html" width="100%" style="height: 447px;" loading="lazy"></iframe>
+                        <iframe src="./html/closing.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -573,7 +597,7 @@
                     <br><br>
 
                     <div>
-                        <iframe src="./html/morphgrad.html" width="100%" style="height: 447px;" loading="lazy"></iframe>
+                        <iframe src="./html/morphgrad.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -581,7 +605,7 @@
                     <br><br>
 
                     <div>
-                        <iframe src="./html/tophat.html" width="100%" style="height: 447px;" loading="lazy"></iframe>
+                        <iframe src="./html/tophat.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -589,7 +613,7 @@
                     <br><br>
 
                     <div>
-                        <iframe src="./html/blackhat.html" width="100%" style="height: 447px;" loading="lazy"></iframe>
+                        <iframe src="./html/blackhat.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -597,7 +621,7 @@
                     <br><br>
 
                     <div>
-                        <iframe src="./html/structele.html" width="100%" style="height: 447px;" loading="lazy"></iframe>
+                        <iframe src="./html/structele.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                 </section>
@@ -611,7 +635,7 @@
                     <br><br>
                 
                     <div > 
-                        <iframe src="./html/sobel.html" width="100%" style="height: 447px;" loading="lazy"></iframe>
+                        <iframe src="./html/sobel.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <p>Scharr derivative</p>
@@ -619,7 +643,7 @@
                     <br><br>
                 
                     <div >
-                        <iframe src="./html/scharr.html" width="100%" style="height: 447px;" loading="lazy"></iframe>
+                        <iframe src="./html/scharr.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -629,7 +653,7 @@
                     <br><br>
                 
                     <div >
-                        <iframe src="./html/laplachian.html" width="100%" style="height: 447px;" loading="lazy"></iframe>
+                        <iframe src="./html/laplachian.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -639,7 +663,7 @@
                     <br><br>
                 
                     <div >
-                        <iframe src="./html/canny.html" width="100%" style="height: 447px;" loading="lazy"></iframe>
+                        <iframe src="./html/canny.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -655,7 +679,7 @@
                     <br><br>
                 
                     <div >
-                        <iframe src="./html/histogram.html" width="100%" style="height: 447px;" loading="lazy"></iframe>
+                        <iframe src="./html/histogram.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -665,7 +689,7 @@
                     <br><br>
                 
                     <div >
-                        <iframe src="./html/histeq.html" width="100%" style="height: 447px;" loading="lazy"></iframe>
+                        <iframe src="./html/histeq.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -681,7 +705,7 @@
                 <br><br>
 
                     <div>
-                        <iframe src="./html/fourier.html" width="100%" style="height: 447px;" loading="lazy"></iframe>
+                        <iframe src="./html/fourier.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
                 
                 </section>
@@ -695,7 +719,7 @@
                     <br><br>
                 
                     <div >
-                        <iframe src="./html/houghline.html" width="100%" style="height: 447px;" loading="lazy"></iframe>
+                        <iframe src="./html/houghline.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -705,7 +729,7 @@
                     <br><br>
                 
                     <div >
-                        <iframe src="./html/houghlinep.html" width="100%" style="height: 447px;" loading="lazy"></iframe>
+                        <iframe src="./html/houghlinep.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -717,7 +741,7 @@
                     <br><br>
                 
                     <div >
-                        <iframe src="./html/houghcircle.html" width="100%" style="height: 447px;" loading="lazy"></iframe>
+                        <iframe src="./html/houghcircle.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                     <br><br>
@@ -732,7 +756,7 @@
                 <br><br>
 
                     <div>
-                        <iframe src="./html/segmentation.html" width="100%" style="height: 447px;" loading="lazy"></iframe>
+                        <iframe src="./html/segmentation.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
                 </section>
