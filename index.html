@@ -468,7 +468,7 @@
                     </p>
 
                     <br><br>
-                    <p>Affine transformation</p>
+                    <h3>Affine transformation</h3>
                     <br><br>
                     <p>Affine transformation is a linear mapping method that preserves points, straight lines, and planes. Sets of parallel lines remain parallel after an affine transformation.
                     <center>
@@ -485,7 +485,7 @@
                     </div>
 
                     <br><br>
-                    <p>Scaling transformation</p>
+                    <h3>Scaling transformation</h3>
                     <br><br>
                     <p>It is used to alter or change the size of objects. The change is done using scaling factors. There are two scaling factors, i.e. Sx in x direction Sy in y-direction. If the original position is x and y. Scaling factors are Sx and Sy then the value of coordinates after scaling will be x1 and y1.
                     <center>
@@ -507,7 +507,7 @@
                     </div>
 
                     <br><br>
-                    <p>Rotate transformation</p>
+                    <h3>Rotate transformation</h3>
                     <p>Image rotation is a common image processing routine with applications in matching, alignment, and other image-based algorithms. The input to an image rotation routine is an image, the rotation angle θ, and a point about which rotation is done.</p>
                     <center>
                             <img class="theory" src="./images/cat1.jpg">
@@ -531,10 +531,12 @@
 <!---------------------------------------------------------------------------------------------------------------------> 
                 <section id="thresh">
                     <h2>Thresholding</h2>
+
                     <p>Thresholding is a technique in OpenCV, which is the assignment of pixel values in relation to the threshold value provided. In thresholding, each pixel value is compared with the threshold value. If the pixel value is smaller than the threshold, it is set to 0, otherwise, it is set to a maximum value (generally 255). Thresholding is a very popular segmentation technique, used for separating an object considered as a foreground from its background. A threshold is a value which has two regions on its either side i.e. below the threshold or above the threshold. 
                     In Computer Vision, this technique of thresholding is done on grayscale images. So initially, the image has to be converted in grayscale color space. </p><br>
                     <p>The simplest thresholding methods replace each pixel in an image with a black pixel if the image intensity I(i,j) is less than a fixed value called the threshold T or a white pixel if the pixel intensity is greater than that threshold. In the example image on the right, this results in the dark tree becoming completely black, and the bright snow becoming completely white.</p><br><br>
-                    <p>Simple Binary Threshold</p>
+                    
+                    <h3>Simple Binary Threshold</h3>
                     <p>The basic Thresholding technique is Binary Thresholding. For every pixel, the same threshold value is applied. If the pixel value is smaller than the threshold, it is set to 0, otherwise, it is set to a maximum value.The different Simple Thresholding Techniques are: 
                     <p>1. cv2.THRESH_BINARY: If pixel intensity is greater than the set threshold, value set to 255, else set to 0 (black).</p>
                     <p>2. cv2.THRESH_BINARY_INV: Inverted or Opposite case of cv2.THRESH_BINARY.</p>
@@ -552,7 +554,8 @@
                         <iframe src="./html/bthresh.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
-                    <p>Adaptive Thresholding</p><br>
+                    <h3>Adaptive Thresholding</h3>
+                    <br>
                     <p>Adaptive thresholding is the method where the threshold value is calculated for smaller regions and therefore, there will be different threshold values for different regions.
                     In OpenCV, you can perform Adaptive threshold operation on an image using the method adaptiveThreshold() of the Imgproc class. Following is the syntax of this method.
                     <br>adaptiveThreshold(src, dst, maxValue, adaptiveMethod, thresholdType, blockSize, C)</p>
@@ -577,7 +580,7 @@
                     <h2>Filtering</h2>
                     <p>Image filtering is changing the appearance of an image by altering the colors of the pixels. Increasing the contrast as well as adding a variety of special effects to images are some of the results of applying filters. Filtering is a technique for modifying or enhancing an image. For example, you can filter an image to emphasize certain features or remove other features. Image processing operations implemented with filtering include smoothing, sharpening, and edge enhancement.Filtering is a neighborhood operation, in which the value of any given pixel in the output image is determined by applying some algorithm to the values of the pixels in the neighborhood of the corresponding input pixel. A pixel's neighborhood is some set of pixels, defined by their locations relative to that pixel. </p>
                     <br><br>
-                    <p>Average Blur</p>
+                    <h3>Average Blur</h3>
                     <br><br>
                     <p>Averaging is the blurring technique where the image is normalized. It replaces the central elements with the calculated average of pixel values under the kernel area.OpenCV provides the cv2.blur() function for averaging applications.</p>
                     <center>
@@ -596,7 +599,8 @@
                     <br><br>
 
 
-                    <p>Gaussian Blur</p><br>
+                    <h3>Gaussian Blur</h3>
+                    <br>
                     <p>Gaussian blur describes blurring an image by a Gaussian function. It is a widely used effect in graphics software, typically to reduce image noise and reduce detail. The visual effect of this blurring technique is a smooth blur resembling that of viewing the image through a translucent screen, distinctly different from the bokeh effect produced by an out-of-focus lens or the shadow of an object under usual illumination. Gaussian smoothing is also used as a pre-processing stage in computer vision algorithms in order to enhance image structures at different scales—see scale-space representation and scale-space implementation.</p><br>
                     <center>
                             <img class="theory" src="./images/gaussian1.jpg">
@@ -612,7 +616,7 @@
                     <br><br>
 
 
-                    <p>Median Blur</p>
+                    <h3>Median Blur</h3>
                     <br><br>
                     <p>The Median blur operation is similar to the other averaging methods. Here, the central element of the image is replaced by the median of all the pixels in the kernel area. This operation processes the edges while removing the noise.</p>
                     <center>
@@ -626,7 +630,7 @@
                     <br><br>
 
 
-                    <p>Bilateral Filter</p>
+                    <h3>Bilateral Filter</h3>
                     <br><br>
                     <p>A bilateral filter is a non-linear, edge-preserving, and noise-reducing smoothing filter for images. It replaces the intensity of each pixel with a weighted average of intensity values from nearby pixels. This weight can be based on a Gaussian distribution. Crucially, the weights depend not only on Euclidean distance of pixels, but also on the radiometric differences (e.g., range differences, such as color intensity, depth distance, etc.). This preserves sharp edges.</p>
                     <center>
@@ -644,7 +648,7 @@
                     <h2>Morphological Transformations</h2>
                     <p>Morphology is known as the broad set of image processing operations that process images based on shapes. It is also known as a tool used for extracting image components that are useful in the representation and description of region shape.Morphology is a broad set of image processing operations that process images based on shapes. Morphological operations apply a structuring element to an input image, creating an output image of the same size. In a morphological operation, the value of each pixel in the output image is based on a comparison of the corresponding pixel in the input image with its neighbors. </p>
                     <br><br>
-                    <p>Erosion</p>
+                    <h3>Erosion</h3>
                     <br><br>
                     <p>Erosion (usually represented by ⊖) is one of two fundamental operations (the other being dilation) in morphological image processing from which all other morphological operations are based. It was originally defined for binary images, later being extended to grayscale images, and subsequently to complete lattices. The erosion operation usually uses a structuring element for probing and reducing the shapes contained in the input image.</p>
                     <center>
@@ -656,7 +660,7 @@
                     </div>
 
                     <br><br>
-                    <p>Dilation</p>
+                    <h3>Dilation</h3>
                     <br><br>
                     <p>The most basic morphological operations are dilation and erosion. Dilation adds pixels to the boundaries of objects in an image, while erosion removes pixels on object boundaries. The number of pixels added or removed from the objects in an image depends on the size and shape of the structuring element used to process the image. In the morphological dilation and erosion operations, the state of any given pixel in the output image is determined by applying a rule to the corresponding pixel and its neighbors in the input image. The rule used to process the pixels defines the operation as a dilation or an erosion. This table lists the rules for both dilation and erosion.  </p>
                     <center>
@@ -668,7 +672,7 @@
                     </div>
 
                     <br><br>
-                    <p>Opening</p>
+                    <h3>Opening</h3>
                     <br><br>
                     <p>Opening is one of the fundamental morphological operations and is commonly used for image preprocessing to remove noise and small unwanted objects while preserving the larger structures in the image. It combines two basic operations: erosion followed by dilation. Opening is performed by applying the erosion operation first, followed by the dilation operation using the same structuring element. The result is a smoother image with reduced noise, removed small objects, and preserved larger structures.
                     Opening is mathematically represented as follows:
@@ -688,7 +692,7 @@
                     </div>
 
                     <br><br>
-                    <p>Closing</p>
+                    <h3>Closing</h3>
                     <br><br>
                     <p>Closing is another fundamental morphological operation in image processing, and it is the dual of opening. Closing is typically used to fill small holes and gaps in the foreground regions while preserving the larger structures in the image. It consists of two basic operations: dilation followed by erosion.Closing is performed by applying the dilation operation first, followed by the erosion operation using the same structuring element. The result is a smoother image with filled holes and gaps in the foreground regions while preserving the larger structures. Closing is mathematically represented as follows: <br>
                     Closing(A) = Erosion(Dilation(A, B), B)where: <br>
@@ -707,7 +711,7 @@
                     </div>
 
                     <br><br>
-                    <p>Morphological Gradient</p>
+                    <h3>Morphological Gradient</h3>
                     <br><br>
                     <p>The morphological gradient is another important morphological operation used in image processing. It is derived from the difference between the dilation and erosion of an image and is primarily employed to highlight the boundaries or edges of objects in the input image.
                         <br>
@@ -741,7 +745,7 @@
                     </div>
 
                     <br><br>
-                    <p>Top Hat</p>
+                    <h3>Top Hat</h3>
                     <br><br>
                     <p>In image processing, the top-hat operation is another morphological operation used to enhance or extract specific features in an image. It is particularly useful for highlighting small and bright details, such as small objects or bright regions, that are smaller than the structuring element used in the operation. <br>
 
@@ -782,7 +786,7 @@
                     </div>
 
                     <br><br>
-                    <p>Black Hat</p>
+                    <h3>Black Hat</h3>
                     <br><br>
                     <p>In image processing, the black hat operation is another morphological operation used to enhance or extract specific features in an image. It is the dual of the top-hat operation and is particularly useful for highlighting small and dark details, such as small dark regions or structures that are smaller than the structuring element used in the operation. <br>
 
@@ -822,7 +826,7 @@
                     </div>
 
                     <br><br>
-                    <p>Structuring Element</p>
+                    <h3>Structuring Element</h3>
                     <br><br>
                     <p>In image processing and mathematical morphology, a structuring element, also known as a kernel, is a small matrix or a shape used to probe, analyze, or manipulate an image. Structuring elements are essential components of various morphological operations, including dilation, erosion, opening, closing, top-hat, and black hat, which are used for image processing tasks such as noise removal, feature extraction, and object detection. <br>
 
@@ -859,7 +863,7 @@
                 <section id="gradient">
                     <h2>Image Gradients</h2>
 
-                    <p>Sobel Derivative</p>
+                    <h3>Sobel Derivative</h3>
                     <br><br>
                     <p>The Sobel operator is a commonly used edge detection filter in image processing and computer vision. It is used to compute the gradient of an image intensity function, which highlights edges and boundaries in the image. The operator uses two separate 3x3 convolution kernels to calculate the derivative approximation in the horizontal and vertical directions.</p> 
                     <center>
@@ -874,7 +878,7 @@
                         <iframe src="./html/sobel.html" width="100%" style="height: 500px;" loading="lazy"></iframe>
                     </div>
 
-                    <p>Scharr derivative</p>
+                    <h3>Scharr derivative</h3>
                     <br><br>
                     <p>The Scharr operator is an edge detection filter used in image processing and computer vision. It is commonly used to find the edges of objects or boundaries in digital images. The operator is designed to be more sensitive to edges than the traditional Sobel operator, especially for diagonal edges. <br>
                     The Scharr operator approximates the gradient of the image intensity function with respect to both the X and Y directions. It consists of two separate kernels (one for each direction) that are convolved with the image to compute the gradient magnitude and direction. <br>
@@ -889,7 +893,7 @@
 
                     <br><br>
 
-                    <p>Laplachian Derivative</p>
+                    <h3>Laplachian Derivative</h3>
                     <br><br>
                     <p>Laplacian Operator is also a derivative operator which is used to find edges in an image. The major difference between Laplacian and other operators like Prewitt, Sobel, Robinson and Kirsch is that these all are first order derivative masks but Laplacian is a second order derivative mask. In this mask we have two further classifications one is Positive Laplacian Operator and other is Negative Laplacian Operator. <br>
 
@@ -909,7 +913,7 @@
 
                     <br><br>
 
-                    <p>Canny Edge Detection</p>
+                    <h3>Canny Edge Detection</h3>
                     <br><br>
                     <p>Canny edge detection uses linear filtering with a Gaussian kernel to smooth noise and then computes the edge strength and direction for each pixel in the smoothed image. Candidate edge pixels are identified as the pixels that survive a thinning process called non-maximal suppression. In this process, the edge strength of each candidate edge pixel is set to zero if its edge strength is not larger than the edge strength of the two adjacent pixels in the gradient direction. Thresholding is then done on the thinned edge magnitude image using hysteresis. In hysteresis, two edge strength thresholds are used. All candidate edge pixels below the lower threshold are labeled as non-edges and all pixels above the low threshold that can be connected to any pixel above the high threshold through a chain of edge pixels are labeled as edge pixels.</p>
                     <center>
@@ -929,7 +933,7 @@
                 <section id="hist">
                     <h2>Histogram</h2>
                     <p>A histogram is basically used to represent data provided in a form of some groups.It is accurate method for the graphical representation of numerical data distribution.It is a type of bar plot where X-axis represents the bin ranges while Y-axis gives information about frequency.</p>
-                    <p>Plotting</p> <br><br>
+                    <h3>Plotting</h3> <br><br>
                     <p>To create a histogram the first step is to create bin of the ranges, then distribute the whole range of the values into a series of intervals, and count the values which fall into each of the intervals.Bins are clearly identified as consecutive, non-overlapping intervals of variables.The matplotlib.pyplot.hist() function is used to compute and create histogram of x. </p>
                     <center>
                         <img src="./images/hist1.jpg" class="theory">
@@ -945,7 +949,7 @@
 
                     <br><br>
 
-                    <p>Equalisation</p>
+                    <h3>Equalisation</h3>
                     <br><br>
                     <p>Histogram equalization is a technique used in image processing to enhance the contrast of an image by redistributing the intensity values of pixels. The goal of histogram equalization is to achieve a uniform or nearly uniform histogram, which spreads the intensity values across the entire range. <br>
 
@@ -978,7 +982,7 @@
 <!---------------------------------------------------------------------------------------------------------------------> 
                 <section id="fourier">
                     <h2>Fourier Transform</h2>
-                    <p>Fourier</p>
+                    <h3>Fourier</h3>
                     <br><br>
                     <p>Fourier transformation is a fundamental mathematical operation used in signal processing, image processing, and various other fields to analyze and represent signals or functions in terms of their frequency components. It was introduced by the French mathematician Joseph Fourier. <br>
 
@@ -1015,7 +1019,7 @@
                 <section id="hough">
                     <h2>Hough Transform</h2>
                     <p>The Hough Transform is a method that is used in image processing to detect any shape, if that shape can be represented in mathematical form. It can detect the shape even if it is broken or distorted a little bit. </p>
-                    <p>Hough Line Transform</p>
+                    <h3>Hough Line Transform</h3>
                     <br><br>
                     <p>The Hough line transform is a feature extraction technique used in image processing and computer vision to detect straight lines in an image. It was proposed by Paul Hough in 1962. The basic idea behind the Hough line transform is to represent lines in an image as points in a parameter space known as the Hough space. Each point in the Hough space corresponds to a potential line in the original image. The transform works by converting the pixel coordinates of edge points (e.g., obtained through edge detection algorithms like Canny) into lines in the Hough space. <br>
 
@@ -1043,7 +1047,7 @@
 
                     <br><br>
 
-                    <p>Probabilistic Hough Line Transform</p>
+                    <h3>Probabilistic Hough Line Transform</h3>
                     <br><br>
                     <p>The Probabilistic Hough Line Transform is a variation of the traditional Hough Line Transform used for detecting straight lines in an image.Compared to the traditional Hough Transform, which involves scanning the entire parameter space to find all possible lines, the Probabilistic Hough Line Transform is computationally more efficient. Instead of considering every edge point in the image, it randomly selects a subset of edge points and only accumulates votes for the lines formed by this subset. <br>
 
@@ -1070,7 +1074,7 @@
 
                     <br><br>
 
-                    <p>Hough Circle Transform</p>
+                    <h3>Hough Circle Transform</h3>
                     <br><br>
                     <p>The Hough Circle Transform is a feature extraction technique used in image processing and computer vision to detect circles in an image. It is an extension of the traditional Hough Line Transform and was proposed by Richard Duda and Peter Hart in 1972.The Hough Circle Transform works by representing circles in an image as points in a three-dimensional parameter space. Each point in the parameter space corresponds to a potential circle in the original image. The transform accumulates votes for potential circles by examining the edge points in the image. <br>
 
@@ -1103,24 +1107,24 @@
 <!---------------------------------------------------------------------------------------------------------------------> 
                 <section id="segment">
                     <h2>Segmentation</h2>
-                    <p>Image segmentation and object detection using watershed algorithm</p>
                     <br><br>
                     <p>Segmentation in image processing refers to the process of dividing an image into meaningful and semantically coherent regions or segments. The goal of image segmentation is to simplify the representation of an image, making it easier to analyze and extract useful information from specific regions of interest.
 
                     There are various techniques for image segmentation, and the choice of method depends on the characteristics of the image and the specific application. Some common segmentation techniques include:
 
-                    1. **Thresholding**: This method involves selecting a threshold value and classifying each pixel in the image as foreground or background based on whether its intensity is above or below the threshold. It is useful for segmenting objects with distinct intensity levels.
+                    <br> 1. <strong><em><u>Thresholding</strong></em></u>: This method involves selecting a threshold value and classifying each pixel in the image as foreground or background based on whether its intensity is above or below the threshold. It is useful for segmenting objects with distinct intensity levels.
 
-                    2. **Edge-Based Segmentation**: This approach detects edges or boundaries in an image by identifying significant changes in pixel intensity. The edges outline the objects or regions in the image, making it easy to extract them.
+                    <br> 2. <strong><em><u>Edge-Based Segmentation</strong></em></u>: This approach detects edges or boundaries in an image by identifying significant changes in pixel intensity. The edges outline the objects or regions in the image, making it easy to extract them.
 
-                    3. **Region-Growing**: Region-growing methods start with seed points and expand regions by adding neighboring pixels that meet certain similarity criteria. This process continues until the entire region is covered or a stopping criterion is met.
+                    <br> 3. <strong><em><u>Region-Growing</strong></em></u>: Region-growing methods start with seed points and expand regions by adding neighboring pixels that meet certain similarity criteria. This process continues until the entire region is covered or a stopping criterion is met.
 
-                    4. **Clustering**: Clustering techniques group pixels based on their similarities in color, intensity, texture, or other features. This can be achieved using methods like K-means clustering or mean-shift clustering.
+                    <br> 4. <strong><em><u>Clustering</strong></em></u>: Clustering techniques group pixels based on their similarities in color, intensity, texture, or other features. This can be achieved using methods like K-means clustering or mean-shift clustering.
 
-                    5. **Watershed Segmentation**: The watershed algorithm treats pixel intensities as topographical features and simulates flooding to separate regions based on intensity valleys.
+                    <br> 5. <strong><em><u>Watershed Segmentatio</strong></em></u>: The watershed algorithm treats pixel intensities as topographical features and simulates flooding to separate regions based on intensity valleys.
 
-                    6. **Graph-Based Segmentation**: This method represents an image as a graph, where pixels are nodes and edges represent the relationships between pixels. Graph-based algorithms identify segment boundaries based on graph properties.
+                    <br> 6. <strong><em><u>Graph-Based Segmentation</strong></em></u>: This method represents an image as a graph, where pixels are nodes and edges represent the relationships between pixels. Graph-based algorithms identify segment boundaries based on graph properties.
 
+                    <br><br>
                     Image segmentation is a critical step in various computer vision and image analysis tasks, such as object recognition, image compression, image editing, medical image analysis, and autonomous vehicle navigation.
 
                     Since image segmentation can be challenging and depends on the nature of the image and the desired output, researchers continue to develop and refine advanced segmentation algorithms to tackle various segmentation problems. Deep learning techniques, especially convolutional neural networks (CNNs), have shown remarkable success in segmenting complex and diverse images.</p>
@@ -1168,7 +1172,7 @@
                 </p>
                 <br>
                 <a class="samp" href="./images/rgb bubbles.jpg" download="Bubbles"><img class="res" src="./images/rgb bubbles.jpg" alt="Bubbles" loading=" "></a>&nbsp;
-                <a class="samp" href="./images/rgb circles.png" download="B&W Flower"><img class="res" src="./images/rgb circles.png" alt="Circles" loading=" "></a>&nbsp;
+                <a class="samp" href="./images/rgb circles.png" download="Circles"><img class="res" src="./images/rgb circles.png" alt="Circles" loading=" "></a>&nbsp;
                 <a class="samp" href="./images/rgb dog.jpg" download="Dog"><img class="res" src="./images/rgb dog.jpg" alt="Dog" loading=" "></a>&nbsp;
                 <a class="samp" href="./images/rgb parrot.jpeg" download="Parrot"><img class="res" src="./images/rgb parrot.jpeg" alt="Parrot" loading=" "></a>&nbsp;
                 <br>
